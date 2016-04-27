@@ -1,6 +1,6 @@
 # SDEBM
 
-Structured Data Exploration BenchMark inspired by the Berlin SPARQL Benchmark but intended for benchmarking 
+Structured Data Exploration BenchMark inspired by the Berlin SPARQL Benchmark but intended for benchmarking
 the user experience while exploring a structured dataset, not the performance of the query engine.
 
 ## Benchmarks
@@ -8,6 +8,8 @@ the user experience while exploring a structured dataset, not the performance of
 #### 1a. [Find products for a given set of features combined](Benchmarks/1a.md)
 
 #### 1b. [Find products for a given set of alternative features](Benchmarks/1b.md)
+
+#### 2. [Find products having some specific features and not having one feature](Benchmarks/2.md)
 
 #### ...work in progress
 
