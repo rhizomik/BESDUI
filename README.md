@@ -13,6 +13,8 @@ the user experience while exploring a structured dataset, not the performance of
 
 #### 3. [Find products having some specific features and not having one feature](Benchmarks/3.md)
 
+#### 4. [Find products matching two different sets of features](Benchmarks/4.md)
+
 #### ...work in progress
 
 ## Metrics
