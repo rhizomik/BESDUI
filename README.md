@@ -17,6 +17,8 @@ the user experience while exploring a structured dataset, not the performance of
 
 **Benchmark 5**. [Find products that are similar to a given product](Benchmarks/5.md)
 
+**Benchmark 5**. [Find products having a name that contains some text](Benchmarks/6.md)
+
 ...work in progress
 
 ## Metrics
