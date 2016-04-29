@@ -94,10 +94,47 @@ Interaction steps:
 
 **Task 8**. [Give me recent reviews in English for a specific product](Benchmarks/8.md)
 
+Rhizomer does not currently provide a mechanism to filter literals by language.
+
+If this feature is implemented, the interaction steps will be:
+
+1. The user types “waterski...” in the search field and selects the product “waterskiing sharpness horseshoes”.
+1. Click “Review” in right column “Related to...”. (Or “Filter Review” in the “Is Review For of Review” facet).  
+1. Click “Sort by” and from the dropdown select “Review date”.
+1. Click “DESC” to sort the reviews by descending review date. The 10 most recent reviews are shown.
+1. To see the next 10 click “Next”. The 10 next more recent reviews are shown.
+
 **Task 9**. [Get information about a reviewer](Benchmarks/9.md)
+
+Interaction steps:
+
+1. Click menu option "Reviews".
+1. Click "Review1".
+1. Click the reviewer link, “Reviewer1”. All the data for that reviewer is shown.
 
 **Task 10**. [Get offers for a given product which fulfill specific requirements](Benchmarks/10.md)
 
+Interaction steps:
+
+1. Quick search for “waterskiing” and selected the product “waterskiing sharpness horseshoes”.
+1. Click “See related Offers” at the bottom of the product description. Now showing faceted view for the product offers.
+1. Click “Vendor” in right column “Related to...”. (Or in the “Vendor” facet click “Filter Vendor”). The faceted view for product offer vendors is shown.
+1. Click “Show values” for the “Country” facet.
+1. Check “US” for the United State. Details for the four US vendors having offers for the product are shown.
+1. Click “Offer” in the breadcrumbs (or “Offer” in right column “Back to...” or “Filter Offer” in the “Is Vendor of Offer” facet). Details for the seven offers by US vendors are shown.
+1. For the “Delivery days” facet, slide the upper bound of the range down to 3 days. The set of selected offers is reduced to three.
+1. Click “Show values” for the “Valid to” facet. There is no range selector for date facets, the user has to check all dates greater than “2008-06-01” date manually.
+1. **TODO** Click “Sort by” and from the dropdown select “Price”.
+1. Click “DESC” to sort the selected offers by descending price. The cheapest offer from the selected ones is shown first, “Offer3499”.
+
 **Task 11**. [Get all information about an offer](Benchmarks/11.md)
 
+Interaction steps:
+
+(From a view showing a previously selected offer or set of offers...)
+
+1. Click the offer link, for instance “Offer3499”, all the data for that offer is shown.
+
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/12.md)
+
+Currently, Rhizomer does not provide a way to map data and export it using a different schema.
