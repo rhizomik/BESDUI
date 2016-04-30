@@ -4,20 +4,21 @@ This document reports the results for the SDEBM benchmark for the [Virtuoso](htt
 
 ## Summary
 
-Two [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and the other about efficiency:
+Two [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and two about efficiency:
 
 * **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
 * **Operation Count** (efficiency): how many clicks C, how many typing events T and how many slides S are required at least to complete the task.
-* **Speed** (efficiency)
+* **Speed** (efficiency): this metric is based on GOMS and derived from the Operation Count metric.
 
 |Benchmark|Task Success|Interaction Steps|
 |---------|------------|-----------------|
 |1        | 100%       | 17C/2T          |
 |2        | 0%         |                 |
 |3        | 100%       | 1C              |
-|4        |            | |
-|5        |            | |
-|6        |            | |
+|4        | 0%         |                 |
+|5        | 0%         |                 |
+|6        | 0%         |                 |
+|7        | 100%       | 1C/1T           |
 
 ## Results per Benchmarks
 
@@ -56,16 +57,25 @@ Interaction steps:
 
 **Task 4**. [Find products having some specific features and not having one feature](Benchmarks/4.md)
 
+Virtuoso Facets does not seem to support this task. Though it is possible to specify that a property is different from a particular URI, or not int a set of defined URIs, it is not possible to define that a particular URI should not exist.
+
 **Task 5**. [Find products matching two different sets of features](Benchmarks/5.md)
 
+There does not seem to be a way to define a union of patters with Rhizomer.
 
 **Task 6**. [Find products that are similar to a given product](Benchmarks/6.md)
 
+There is not a way to get a faceted view of a given product and the relax the restrictions.
 
 **Task 7**. [Find products having a name that contains some text](Benchmarks/7.md)
 
+The interaction steps are:
+
+1. Type "waterski..." in the main page search form
+1. Click "Product768".
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](Benchmarks/8.md)
+
 
 
 **Task 9**. [Give me recent reviews in English for a specific product](Benchmarks/9.md)

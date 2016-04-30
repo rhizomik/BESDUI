@@ -33,7 +33,8 @@ the user experience while exploring a structured dataset, not the performance of
 
 ## Metrics
 
-For the moment, two [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and the other about efficiency:
+For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and two about efficiency:
 
-* **Task Success** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Interaction Steps** (efficiency): how many clicks C and how many typing events T are required at least to complete the task.
+* **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
+* **Operation Count** (efficiency): how many clicks C, how many typing events T and how many slides S are required at least to complete the task.
+* **Speed** (efficiency): this metric is based on GOMS and derived from the Operation Count metric.
