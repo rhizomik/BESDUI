@@ -4,31 +4,32 @@ This document reports the results for the SDEBM benchmark for the [Rhizomer](htt
 
 ## Summary
 
-Two [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and the other about efficiency:
+Three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used:
 
-* **Task Success** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Interaction Steps** (efficiency): how many clicks C and how many typing events T are required at least to complete the task.
+* **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
+* **Operation Count** (efficiency): how many clicks C, how many typing events T and how many slides S are required at least to complete the task.
+* **Speed** (efficiency)
 
 |Benchmark|Task Success|Interaction Steps|
-|---------|-------------|----------------|
-|1a       |0%           |-               |
-|1b       |100%         |5C/1T           |
-|2        |             | |
-|3        |             | |
-|4        |             | |
-|5        |             | |
+|---------|------------|-----------------|
+|1        | 0%         |                 |
+|2        | 100%       | 5C/1T/1S        |
+|3        | 100%       | 1C              |
+|4        | 0%         |                 |
+|5        | 0%         |                 |
+|6        | 100%       | |
 
 ## Results per Benchmarks
 
-**Task 1a**. [Find products for a given set of features combined](Benchmarks/1a.md)
+**Task 1**. [Find products for a given set of features combined](Benchmarks/1.md)
 
 This task cannot be performed because Rhizomer does not provide a way to define that all the selected values of a facet, in this case the productFeature facet, should be present at the same time for a given resource.
 
-**Task 1b**. [Find products for a given set of alternative features](Benchmarks/1b.md)
+**Task 2**. [Find products for a given set of alternative features](Benchmarks/2.md)
 
 Interaction steps:
 
-1. Over Top Menu “ProductType”.
+1. Click top menu “ProductType”.
 1. Click “Sheeny” from submenu.
 1. Click “Show values” for facet “Product Feature”.
 1. Check facet value “stroboscopes”.
@@ -36,15 +37,15 @@ Interaction steps:
 1. Click “gadgeteers” from the input box autocomplete recommendations.
 1. Set the left side of the slider for facet “Product Property Numeric1” to “450”. (Or type “450” in the “From” input box for facet “Product Property Numeric1” and then press tabulator).
 
-**Task 2**. [Retrieve basic information about a specific product for display purposes](Benchmarks/2.md)
+**Task 3**. [Retrieve basic information about a specific product for display purposes](Benchmarks/3.md)
 
-From Query 1b Rhizomer shows the list of selected products and a short description for each one (label, types and comment). Click any product to retrieve all the metadata for the selected product..
+From Query 1b Rhizomer shows the list of selected products and a short description for each one (label, types and comment). Click any product to retrieve all the metadata for the selected product.
 
 Interaction steps:
 
 1. Click product label “boozed”.
 
-**Task 3**. [Find products having some specific features and not having one feature](Benchmarks/3.md)
+**Task 4**. [Find products having some specific features and not having one feature](Benchmarks/4.md)
 
 This task is not currently possible using Rhizomer because it does not provide a way to negate facet values.
 
@@ -53,21 +54,27 @@ When this feature is implemented, these will be the interaction steps:
 1. Over Top Menu “ProductType” and click “Sheeny” from submenu.
 1. Click “Show values” for facet “Product Feature”.
 1. Check facet value “stroboscopes”.
-1. Type in the “Seach Product Feature” input box “gadget”.
+1. Type in the “Search Product Feature” input box “gadget”.
 1. Click “gadgeteers” from the input box autocomplete recommendations.
 1. **TODO** Mark that the “gadgeteers” value should NOT be present
 1. Set the left side of the slider for facet “Product Property Numeric1” to “300”.
 1. Set the right side of the slider for facet “Product Property Numeric3” to “400”.
 
-**Task 4**. [Find products matching two different sets of features](Benchmarks/4.md)
+**Task 5**. [Find products matching two different sets of features](Benchmarks/5.md)
 
 It cannot be performed using Rhizomer because it currently does not support AND for facet value neither the union of different query patterns.
 
-**Task 5**. [Find products that are similar to a given product](Benchmarks/5.md)
+**Task 6**. [Find products that are similar to a given product](Benchmarks/6.md)
 
 The user can look for a specific product. As a result, the corresponding faceted view for it is generated and a query where the restriction is that the product is the one selected. The faceted view can be then used to select all the product features of the selected product. The user can also see the values for the numeric properties and manually set the ranges in the corresponding facet sliders. Finally, the user can remove the restriction for the specific product while keeping the rest of restrictions to retrieve similar products.
 
-**Task 6**. [Find products having a name that contains some text](Benchmarks/6.md)
+1. Type "boozed" in search form
+1. 4 Clicks to expand all feature values
+1. 20 Clicks to select all features for the current product
+1. Click to remove restriction for current product
+1. 4 Slides to set ranges for numeric properties 1 and 2
+
+**Task 7**. [Find products having a name that contains some text](Benchmarks/7.md)
 
 The user can directly use the “Quick search...” input box at the top, type “water” and a list of entities whose label contains “water” is shown, from where the user can select the one he is interested in.
 
@@ -75,7 +82,7 @@ Alternative: click “Product” in the menu and then use the “label” facet 
 
 Alternative: not supported yet, “Quick search...” in addition to autocomplete user input also performs free text search and shows results in a view faceted by entity type.
 
-**Task 7**. [Retrieve in-depth information about a specific product including offers and reviews](Benchmarks/7.md)
+**Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](Benchmarks/8.md)
 
 Interaction steps:
 
@@ -92,7 +99,7 @@ Interaction steps:
 1. Click “Product” in right column “Related to...”. (Or “Filter Product” in the “Product” facet). The details for the selected product and its faceted view are shown.
 1. Click “Review” in right column “Related to...”. (Or “Filter Review” in the “Is Review For of Review” facet). Details for five reviews for the selected product are shown, including rating1, rating2 or both when available.
 
-**Task 8**. [Give me recent reviews in English for a specific product](Benchmarks/8.md)
+**Task 9**. [Give me recent reviews in English for a specific product](Benchmarks/9.md)
 
 Rhizomer does not currently provide a mechanism to filter literals by language.
 
@@ -104,7 +111,7 @@ If this feature is implemented, the interaction steps will be:
 1. Click “DESC” to sort the reviews by descending review date. The 10 most recent reviews are shown.
 1. To see the next 10 click “Next”. The 10 next more recent reviews are shown.
 
-**Task 9**. [Get information about a reviewer](Benchmarks/9.md)
+**Task 10**. [Get information about a reviewer](Benchmarks/10.md)
 
 Interaction steps:
 
@@ -112,7 +119,7 @@ Interaction steps:
 1. Click "Review1".
 1. Click the reviewer link, “Reviewer1”. All the data for that reviewer is shown.
 
-**Task 10**. [Get offers for a given product which fulfill specific requirements](Benchmarks/10.md)
+**Task 11**. [Get offers for a given product which fulfill specific requirements](Benchmarks/11.md)
 
 Interaction steps:
 
@@ -127,7 +134,7 @@ Interaction steps:
 1. **TODO** Click “Sort by” and from the dropdown select “Price”.
 1. Click “DESC” to sort the selected offers by descending price. The cheapest offer from the selected ones is shown first, “Offer3499”.
 
-**Task 11**. [Get all information about an offer](Benchmarks/11.md)
+**Task 12**. [Get all information about an offer](Benchmarks/12.md)
 
 Interaction steps:
 
@@ -135,6 +142,6 @@ Interaction steps:
 
 1. Click the offer link, for instance “Offer3499”, all the data for that offer is shown.
 
-**Task 12**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/12.md)
+**Task 13**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/13.md)
 
 Currently, Rhizomer does not provide a way to map data and export it using a different schema.
