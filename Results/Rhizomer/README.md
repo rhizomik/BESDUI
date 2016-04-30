@@ -7,17 +7,24 @@ This document reports the results for the SDEBM benchmark for the [Rhizomer](htt
 Three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and two about efficiency:
 
 * **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Operation Count** (efficiency): how many clicks C, how many typing events T and how many slides S are required at least to complete the task.
-* **Speed** (efficiency): this metric is based on GOMS and derived from the Operation Count metric.
+* **Operation Count** (efficiency): how many clicks K, how many pointing actions P and how many handling event H are required at least to complete the task.
+* **Speed** (efficiency): this metric is based on KLM and derived from the Operation Count metric.
 
-|Benchmark|Task Success|Interaction Steps|
-|---------|------------|-----------------|
-|1        | 0%         |                 |
-|2        | 100%       | 5C/1T/1S        |
-|3        | 100%       | 1C              |
-|4        | 0%         |                 |
-|5        | 0%         |                 |
-|6        | 100%       | |
+|Benchmark|Task Success|Interaction Steps|Speed|
+|---------|------------|-----------------|-----|
+|1        | 0%         |                 |     |
+|2        | 100%       | 10K, 8P, 3H     | 12.0|
+|3        | 100%       | 1K, 1P          |  1.3|
+|4        | 0%         |                 |     |
+|5        | 0%         |                 |     |
+|6        | 100%       | 25K/1T/4S       |
+|7        | 100%       | 1K/1T           |
+|8        | 100%       | 12K/1T          |
+|9        | 0%         |                 |     |
+|10       | 100%       | 3K              |
+|11       | 100%       | 10K/1T/1S       |
+|12       | 100%       | 1K              |
+|13       | 0%         |                 |     |
 
 ## Results per Benchmarks
 
@@ -27,23 +34,29 @@ This task cannot be performed because Rhizomer does not provide a way to define 
 
 **Task 2**. [Find products for a given set of alternative features](Benchmarks/2.md)
 
-Interaction steps:
+The interaction steps and KLM Operators are:
 
-1. Click top menu “ProductType”.
-1. Click “Sheeny” from submenu.
-1. Click “Show values” for facet “Product Feature”.
-1. Check facet value “stroboscopes”.
-1. Type in the “Search Product Feature” input box “gadget...”.
-1. Click “gadgeteers” from the input box autocomplete recommendations.
-1. Set the left side of the slider for facet “Product Property Numeric1” to “450”. (Or type “450” in the “From” input box for facet “Product Property Numeric1” and then press tabulator).
+| Interaction Steps                                               | K | P | H |
+|-----------------------------------------------------------------|---|---|---|
+| 1. Click menu “ProductType” and then “Sheeny” submenu           | 2 | 2 | 1 |
+| 2. Click “Show values” for facet “Product Feature”              | 1 | 1 |   |
+| 3. Click facet value “stroboscopes”                             | 1 | 1 |   |
+| 4. Type in input “Search Product Feature” “gad...”              | 4 | 1 | 1 |
+| 5. Select “gadgeteers” from autocomplete                        | 1 | 1 | 1 |
+| 6. Set left side of “Product Property Numeric1”slider to “450”  | 1 | 2 |   |
+| Total KLM Operations                                            | 10| 8 | 3 |
+| Speed                                                           |    12     |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](Benchmarks/3.md)
 
-From Query 1b Rhizomer shows the list of selected products and a short description for each one (label, types and comment). Click any product to retrieve all the metadata for the selected product.
+From Query 2 Rhizomer shows the list of selected products and a short description for each one (label, types and comment). Click any product to retrieve all the metadata for the selected product.
 
-Interaction steps:
+The interaction steps and KLM Operators are:
 
-1. Click product label “boozed”.
+| Interaction Steps                                               | K | P | H |
+|-----------------------------------------------------------------|---|---|---|
+| 1. Click product label "boozed"                                 | 1 | 1 |   |
+| Speed                                                           |    1.3    |
 
 **Task 4**. [Find products having some specific features and not having one feature](Benchmarks/4.md)
 

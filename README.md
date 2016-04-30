@@ -1,7 +1,8 @@
 # SDEBM
 
-Structured Data Exploration BenchMark (SDEBM) inspired by the Berlin SPARQL Benchmark (BSBM) but intended for benchmarking
-the user experience while exploring a structured dataset, not the performance of the query engine.
+Structured Data Exploration BenchMark (SDEBM) inspired by the Berlin SPARQL Benchmark (BSBM) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine.
+
+> Roberto García, Rosa Gil, Juan Manuel Gimeno, Eirik Bakke, David R. Karger. (2016). Structured Data Exploration Benchmark (SDEBM). Available from: http://w3id.org/SDEBM
 
 ## Benchmarks
 
@@ -36,5 +37,11 @@ the user experience while exploring a structured dataset, not the performance of
 For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and two about efficiency:
 
 * **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Operation Count** (efficiency): how many clicks C, how many typing events T and how many slides S are required at least to complete the task.
-* **Speed** (efficiency): this metric is based on GOMS and derived from the Operation Count metric.
+* **Operation Count** (efficiency): how many KLM Operators are required to complete the task.
+* **Speed** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in the table below. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
+
+| KLM Operator                                                                                                                        | Time (seconds) |
+|-------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| K: button press or keystroke, keys and not characters.                                                                              | 0.2            |
+| P: pointing to a target on a display with a mouse. Time differs depending on distance and size of the target, but is held constant. | 1.1            |
+| H: homing the hand(s) on the keyboard or other device, this includes movement between any two devices.                              | 0.4            |

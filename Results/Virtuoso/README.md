@@ -7,41 +7,43 @@ This document reports the results for the SDEBM benchmark for the [Virtuoso](htt
 Two [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and two about efficiency:
 
 * **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Operation Count** (efficiency): how many clicks C, how many typing events T and how many slides S are required at least to complete the task.
-* **Speed** (efficiency): this metric is based on GOMS and derived from the Operation Count metric.
+* **Operation Count** (efficiency): how many clicks K, how many pointing actions P and how many handling event H are required at least to complete the task.
+* **Speed** (efficiency): this metric is based on KLM and derived from the Operation Count metric.
 
-|Benchmark|Task Success|Interaction Steps|
-|---------|------------|-----------------|
-|1        | 100%       | 17C/2T          |
-|2        | 0%         |                 |
-|3        | 100%       | 1C              |
-|4        | 0%         |                 |
-|5        | 0%         |                 |
-|6        | 0%         |                 |
-|7        | 100%       | 1C/1T           |
+|Benchmark|Task Success|Interaction Steps|Speed|
+|---------|------------|-----------------|-----|
+|1        | 0%         | 28K, 18P, 5H    | 27.4|
+|2        | 100%       |                 |     |
+|3        | 100%       | 1K, 1P          |  1.3|
+|4        | 0%         |                 |     |
+|5        | 0%         |                 |     |
+|6        | 0%         |                 |     |
+|7        | 100%       | 14K, 2P, 3H     |  6.2|
+|8        |            |                 |
+|9        |            |                 |
+|10       |            |                 |
+|11       |            |                 |
+|12       |            |                 |
+|13       |            |                 |
 
 ## Results per Benchmarks
 
 **Task 1**. [Find products for a given set of features combined](Benchmarks/1.md)
 
-Virtuoso Facets can complete this task and the outcome is the expected considering the sample dataset, the products “driveled” and “auditoriums reducing pappies”. To complete this task, the interaction steps are:
+Virtuoso Facets can complete this task and the outcome is the expected considering the sample dataset, the products “driveled” and “auditoriums reducing pappies”. To complete this task, the interaction steps are and KLM operators are:
 
-1.	Type “sheeny” and click “Search”.
-2.	Click “ProductType10”.
-3.	Click “Go” for “Start New Facet”.
-4.	Click “Options”.
-5.	For “Interence Rule” Click and then Select graph containing inference rules for the dataset, for instance http://rhizomik.net/bsbm/schema/rules/
-6.	Click “Apply”.
-7.	Click “Attributes”.
-8.	Click “productFeature”.
-9.	Click “stroboscopes”.
-10.	Click “Attributes”.
-11.	Click “productFeature”.
-12.	Click “gadgeteers”.
-13.	Click “Attributes”.
-14.	Click “productPropertyNumeric1”.
-15.	Click “Add condition: None” and select “>”.
-16.	Type “450” and click “Set Condition”.
+| Interaction Steps                                               | K | P | H |
+|-----------------------------------------------------------------|---|---|---|
+| 1. Type “sheeny” and “Enter”, then click “ProductType10”        | 9 | 2 | 3 |
+| 2. Click “Go” for “Start New Facet”, then click "Options"       | 2 | 2 |   |
+| 3. Click “Inference Rule” and select rules then "Apply"         | 2 | 2 |   |
+| 4. Click “Attributes”, then “productFeature” and “stroboscopes" | 3 | 3 |   |
+| 5. Click “Attributes”, then “productFeature” and “gadgeteers”   | 3 | 3 |   |
+| 6. Click “Attributes” and “productPropertyNumeric1”             | 2 | 2 |   |
+| 7. Click “Add condition: None” and select “>”                   | 2 | 2 |   |
+| 8. Type “450” and click “Set Condition”                         | 5 | 2 | 2 |
+| Total KLM Operations                                            | 28| 18| 5 |
+| Speed                                                           |    27.4   |
 
 **Task 2**. [Find products for a given set of alternative features](Benchmarks/2.md)
 
@@ -51,9 +53,12 @@ Virtuoso, on the other hand, does not seem to feature a mechanism to define alte
 
 From Task one Virtuoso shows the list of selected products. Click any product to retrieve all the metadata for the selected product..
 
-Interaction steps:
+The interaction steps and KLM Operators are:
 
-1. Click product label "driveled".
+| Interaction Steps                                               | K | P | H |
+|-----------------------------------------------------------------|---|---|---|
+| 1. Click product label "driveled"                               | 1 | 1 |   |
+| Speed                                                           |    1.3    |
 
 **Task 4**. [Find products having some specific features and not having one feature](Benchmarks/4.md)
 
@@ -71,11 +76,14 @@ There is not a way to get a faceted view of a given product and the relax the re
 
 The interaction steps are:
 
-1. Type "waterski..." in the main page search form
-1. Click "Product768".
+| Interaction Steps                                               | K | P | H |
+|-----------------------------------------------------------------|---|---|---|
+| 1. Type "waterskiing" in the main page search form              |13 | 1 | 2 |
+| 2. Click "Product768"                                           | 1 | 1 | 1 |
+| Total KLM Operations                                            |14 | 2 | 3 |
+| Speed                                                           |    6.2    |
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](Benchmarks/8.md)
-
 
 
 **Task 9**. [Give me recent reviews in English for a specific product](Benchmarks/9.md)
