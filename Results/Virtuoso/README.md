@@ -4,12 +4,6 @@ This document reports the results for the SDEBM benchmark for the [Virtuoso](htt
 
 ## Summary
 
-Two [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and two about efficiency:
-
-* **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Operation Count** (efficiency): how many clicks K, how many pointing actions P and how many handling event H are required at least to complete the task.
-* **Speed** (efficiency): this metric is based on KLM and derived from the Operation Count metric.
-
 |Benchmark|Task Success|Interaction Steps|Speed|
 |---------|------------|-----------------|-----|
 |1        | 0%         | 28K, 18P, 5H    | 27.4|
@@ -26,7 +20,7 @@ Two [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) ha
 |12       |            |                 |
 |13       |            |                 |
 
-## Results per Benchmarks
+## Results per Task
 
 **Task 1**. [Find products for a given set of features combined](Benchmarks/1.md)
 
