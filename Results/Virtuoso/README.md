@@ -7,7 +7,7 @@ This document reports the results for the SDEBM benchmark for the [Virtuoso](htt
 |Benchmark|Task Success|Interaction Steps|Speed|
 |---------|------------|-----------------|-----|
 |1        | 0%         | 28K, 18P, 5H    | 27.4|
-|2        | 100%       |                 |     |
+|2        | 100%       | 29K, 19P, 5H    | 28.7|
 |3        | 100%       | 1K, 1P          |  1.3|
 |4        | 0%         |                 |     |
 |5        | 0%         |                 |     |
@@ -41,7 +41,22 @@ Virtuoso Facets can complete this task and the outcome is the expected consideri
 
 **Task 2**. [Find products for a given set of alternative features](Benchmarks/2.md)
 
-Virtuoso, on the other hand, does not seem to feature a mechanism to define alternative values for a property. Consequently, it is not possible to complete this task with this tool.
+Virtuoso also supports this task in a very similar way to Task 1, though in this case alternative feature values are defined using the “Add condition: IN” feature.
+
+| Interaction Steps                                               | K | P | H |
+|-----------------------------------------------------------------|---|---|---|
+| 1. Type “sheeny” and “Enter”, then click “ProductType10”        | 9 | 2 | 3 |
+| 2. Click “Go” for “Start New Facet”, then click "Options"       | 2 | 2 |   |
+| 3. Click “Inference Rule” and select rules then "Apply"         | 2 | 2 |   |
+| 4. Click “Attributes”, then “productFeature”                    | 1 | 1 |   |
+| 5. Click “Add condition: None” and select “>”                   | 2 | 2 |   |
+| 6. Click "stroboscopes" and then "Add value"                    | 2 | 2 |   |
+| 7. Click "gadgeteers" and then "Set IN Condition"               | 2 | 2 |   |
+| 6. Click “Attributes” and “productPropertyNumeric1”             | 2 | 2 |   |
+| 7. Click “Add condition: None” and select “>”                   | 2 | 2 |   |
+| 8. Type “450” and click “Set Condition”                         | 5 | 2 | 2 |
+| Total KLM Operations                                            | 29| 19| 5 |
+| Speed                                                           |    28.7   |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](Benchmarks/2.md)
 
@@ -89,7 +104,4 @@ The interaction steps are:
 **Task 11**. [Get offers for a given product which fulfill specific requirements](Benchmarks/11.md)
 
 
-**Task 12**. [Get all information about an offer](Benchmarks/12.md)
-
-
-**Task 13**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/13.md)
+**Task 13**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/12.md)

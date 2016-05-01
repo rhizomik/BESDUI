@@ -141,14 +141,6 @@ Interaction steps:
 1. **TODO** Click “Sort by” and from the dropdown select “Price”.
 1. Click “DESC” to sort the selected offers by descending price. The cheapest offer from the selected ones is shown first, “Offer3499”.
 
-**Task 12**. [Get all information about an offer](Benchmarks/12.md)
-
-Interaction steps:
-
-(From a view showing a previously selected offer or set of offers...)
-
-1. Click the offer link, for instance “Offer3499”, all the data for that offer is shown.
-
-**Task 13**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/13.md)
+**Task 12**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/12.md)
 
 Currently, Rhizomer does not provide a way to map data and export it using a different schema.

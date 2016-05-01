@@ -4,6 +4,8 @@ Structured Data Exploration BenchMark (SDEBM) inspired by the Berlin SPARQL Benc
 
 > Roberto García, Rosa Gil, Juan Manuel Gimeno, Eirik Bakke, David R. Karger. (2016). Structured Data Exploration Benchmark (SDEBM). Available from: http://w3id.org/SDEBM
 
+Please, look at [CONTRIBUTING](CONTRIBUTING.md) and [LICENSE](LICENSE) to know how you can contribute to the benchmark.
+
 ## Benchmarks
 
 **Task 1**. [Find products for a given set of features combined](Benchmarks/1.md)
@@ -28,9 +30,7 @@ Structured Data Exploration BenchMark (SDEBM) inspired by the Berlin SPARQL Benc
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](Benchmarks/11.md)
 
-**Task 12**. [Get all information about an offer](Benchmarks/12.md)
-
-**Task 13**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/13.md)
+**Task 12**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/12.md)
 
 ## Metrics
 
