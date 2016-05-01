@@ -15,19 +15,22 @@ This document reports the results for the SDEBM benchmark for the [Rhizomer](htt
 |Task 7  |100%    |5       |1       |3       |9             |3.3  |
 |Task 8  |100%    |24      |13      |3       |40            |20.3 |
 |Task 9  |0%      |        |        |        |0             |0.0  |
-|Task 10 |100%    |4       |4       |1       |9             |5.6  |
+|Task 10 |100%    |2       |2       |        |4             |2.6  |
 |Task 11 |100%    |24      |14      |3       |41            |21.4 |
 |Task 12 |0%      |        |        |        |0             |0.0  |
-|SUM     |        |106.0   |77.0    |16.0    |199.0         |112.3|
-|AVERAGE |58%     |15.1    |11.0    |2.7     |16.6          |9.4  |
+|SUM     |        |104.0   |75.0    |15.0    |194.0         |109.3|
+|AVERAGE |58%     |14.9    |10.7    |3.0     |16.2          |9.1  |
+
 
 ## Results per Task
 
 **Task 1**. [Find products for a given set of features combined](Benchmarks/1.md)
+> "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
 This task cannot be performed because Rhizomer does not provide a way to define that all the selected values of a facet, in this case the productFeature facet, should be present at the same time for a given resource.
 
 **Task 2**. [Find products for a given set of alternative features](Benchmarks/2.md)
+> "List products of type **sheeny** with product features **stroboscopes** OR **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
@@ -41,6 +44,7 @@ This task cannot be performed because Rhizomer does not provide a way to define 
 | Speed                                                        |      12      |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](Benchmarks/3.md)
+> "Get details about product **boozed**".
 
 From Task 2 Rhizomer shows the list of selected products and a short description for each one (label, types and comment). Click the product label link to retrieve all the metadata for that product.
 
@@ -50,14 +54,17 @@ From Task 2 Rhizomer shows the list of selected products and a short description
 | Speed                                                        |     1.3      |
 
 **Task 4**. [Find products having some specific features and not having one feature](Benchmarks/4.md)
+> "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
 
 This task is not currently possible using Rhizomer because it does not provide a way to negate facet values.
 
 **Task 5**. [Find products matching two different sets of features](Benchmarks/5.md)
+> "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers** and a **productPropertyNumeric1** value greater than **300** plus those of the same product type with product features **stroboscopes** and **rotifers** and a **productPropertyNumeric2** greater than **400**".
 
 It cannot be performed using Rhizomer because it currently does not support AND for facet value neither the union of different query patterns.
 
 **Task 6**. [Find products that are similar to a given product](Benchmarks/6.md)
+> "Look for products similar to **boozed**, with at least one shared feature, and a **productPropertyNumeric1** value between **427 and 627** (100 more or less than its value for boozed, 527) and a **productPropertyNumeric2** value between **545 and 945** (200 more or less than its value for boozed, 745)".
 
 The user can look for a specific product. As a result, the corresponding faceted view for it is generated and a query where the restriction is that the product is the one selected. The faceted view can be then used to select all the product features of the selected product. The user can also see the values for the numeric properties and manually set the ranges in the corresponding facet sliders. Finally, the user can remove the restriction for the specific product while keeping the rest of restrictions to retrieve similar products.
 
@@ -72,6 +79,7 @@ The user can look for a specific product. As a result, the corresponding faceted
 | Speed                                                        |    12.0      |
 
 **Task 7**. [Find products having a name that contains some text](Benchmarks/7.md)
+> "Search products whose name contains **ales**".
 
 The user can directly use the “Quick search...” input box at the top, type “waterskiing” and a list of entities whose label contains “waterskiing” is shown, from where the user can select the one he is interested in.
 
@@ -85,6 +93,7 @@ Alternative: click “Product” in the menu and then use the “label” facet 
 Alternative: not supported yet, “Quick search...” in addition to autocomplete user input also performs free text search and shows results in a view faceted by entity type.
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](Benchmarks/8.md)
+> "For the product **waterskiing sharpness horseshoes** list details for all its **offers** by Chinese vendors and still valid by **2008-05-28** plus details for all **reviews** for this product having either **rating1 or rating2**".
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
@@ -101,19 +110,22 @@ Alternative: not supported yet, “Quick search...” in addition to autocomplet
 | Speed                                                        |     20.3     |
 
 **Task 9**. [Give me recent reviews in English for a specific product](Benchmarks/9.md)
+> "For the product **waterskiing sharpness horseshoes** list the **20** more recent **reviews** in **English**".
 
 Rhizomer does not currently provide a mechanism to filter literals by language.
 
 **Task 10**. [Get information about a reviewer](Benchmarks/10.md)
+> "Get all available information about the author of **Review5481**".
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
-| 1. Click menu option "Reviews" and order "ASC"               |  2 |  2 |  1 |
-| 2. Click "Review1" and then “Reviewer1”                      |  2 |  2 |    |
-| Total Operators                                              |  4 |  4 |  1 |
-| Speed                                                        |     5.6      |
+| 1. Click "Review5481" to expand info                         |  1 |  1 |    |
+| 2. Click "Reviewer268" to get details                        |  1 |  1 |    |
+| Total Operators                                              |  2 |  2 |    |
+| Speed                                                        |     2.6      |
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](Benchmarks/11.md)
+> "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
@@ -122,12 +134,13 @@ Rhizomer does not currently provide a mechanism to filter literals by language.
 | 3. In the “Vendor” facet click “Filter Vendor”               |  1 |  1 |    |
 | 4. Click “Show values” for “Country” and check “US”          |  2 |  2 |    |
 | 5. Go back to offers by clicking “Offer” in breadcrumbs      |  1 |  1 |    |
+| 7. Click "Valid to" values and 3 dates after “2008-06-15”    |  3 |  3 |    |
 | 6. Slide “Delivery days” to 3 or less days                   |  1 |  2 |    |
-| 7. Click "Valid to" values and 2 dates after “2008-06-01”    |  3 |  3 |    |
 | 8. Select "price" in "Sort by" selector                      |  2 |  2 |    |
 | Total Operators                                              | 24 | 14 |  3 |
 | Speed                                                        |     21.4     |
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/12.md)
+> "Save in the local computer the information about the vendor for **Offer3499** and, if possible, restrict it to just label, homepage and country and map them to  **schema.org** terms name, url and nationality".
 
 Currently, Rhizomer does not provide a way to map data and export it using a different schema.

@@ -23,6 +23,7 @@ This document reports the results for the SDEBM benchmark for the [LINK](url) to
 ## Results per Task
 
 **Task 1**. [Find products for a given set of features combined](Benchmarks/1.md)
+> "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
 Not capable of completing the task (Why?)
 
@@ -38,6 +39,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 2**. [Find products for a given set of alternative features](Benchmarks/2.md)
+> "List products of type **sheeny** with product features **stroboscopes** OR **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
 Not capable of completing the task (Why?)
 
@@ -53,6 +55,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](Benchmarks/3.md)
+> "Get details about product **boozed**".
 
 Not capable of completing the task (Why?)
 
@@ -68,6 +71,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 4**. [Find products having some specific features and not having one feature](Benchmarks/4.md)
+> "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
 
 Not capable of completing the task (Why?)
 
@@ -83,6 +87,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 5**. [Find products matching two different sets of features](Benchmarks/5.md)
+> "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers** and a **productPropertyNumeric1** value greater than **300** plus those of the same product type with product features **stroboscopes** and **rotifers** and a **productPropertyNumeric2** greater than **400**".
 
 Not capable of completing the task (Why?)
 
@@ -98,6 +103,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 6**. [Find products that are similar to a given product](Benchmarks/6.md)
+> "Look for products similar to **boozed**, with at least one shared feature, and a **productPropertyNumeric1** value between **427 and 627** (100 more or less than its value for boozed, 527) and a **productPropertyNumeric2** value between **545 and 945** (200 more or less than its value for boozed, 745)".
 
 Not capable of completing the task (Why?)
 
@@ -113,6 +119,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 7**. [Find products having a name that contains some text](Benchmarks/7.md)
+> "Search products whose name contains **ales**".
 
 Not capable of completing the task (Why?)
 
@@ -128,6 +135,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](Benchmarks/8.md)
+> "For the product **waterskiing sharpness horseshoes** list details for all its **offers** by Chinese vendors and still valid by **2008-05-28** plus details for all **reviews** for this product having either **rating1 or rating2**".
 
 Not capable of completing the task (Why?)
 
@@ -143,6 +151,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 9**. [Give me recent reviews in English for a specific product](Benchmarks/9.md)
+> "For the product **waterskiing sharpness horseshoes** list the **20** more recent **reviews** in **English**".
 
 Not capable of completing the task (Why?)
 
@@ -158,6 +167,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 10**. [Get information about a reviewer](Benchmarks/10.md)
+> "Get all available information about the author of **Review5481**".
 
 Not capable of completing the task (Why?)
 
@@ -173,6 +183,7 @@ OR
 | Speed                                                        |    12        |
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](Benchmarks/11.md)
+> "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
 
 Not capable of completing the task (Why?)
 
@@ -186,23 +197,10 @@ OR
 | 4. ...                                                       |  x |  y |  z |
 | Total Operators                                              |  X |  Y |  Z |
 | Speed                                                        |    12        |
+                                                     |    12        |
 
-**Task 12**. [Get all information about an offer](Benchmarks/12.md)
-
-Not capable of completing the task (Why?)
-
-OR
-
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. ...                                                       |  x |  y |  z |
-| 2. ...                                                       |  x |  y |  z |
-| 3. ...                                                       |  x |  y |  z |
-| 4. ...                                                       |  x |  y |  z |
-| Total Operators                                              |  X |  Y |  Z |
-| Speed                                                        |    12        |
-
-**Task 13**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/13.md)
+**Task 12**. [Export the chosen offer into another information system which uses a different schema](Benchmarks/12.md)
+> "Save in the local computer the information about the vendor for **Offer3499** and, if possible, restrict it to just label, homepage and country and map them to  **schema.org** terms name, url and nationality".
 
 Not capable of completing the task (Why?)
 
