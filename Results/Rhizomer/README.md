@@ -12,14 +12,14 @@ This document reports the results for the SDEBM benchmark for the [Rhizomer](htt
 |Task 4  |0%      |        |        |        |0             |0.0  |
 |Task 5  |0%      |        |        |        |0             |0.0  |
 |Task 6  |100%    |38      |36      |3       |77            |48.4 |
-|Task 7  |100%    |13      |2       |3       |18            |6.0  |
+|Task 7  |100%    |5       |1       |3       |9             |3.3  |
 |Task 8  |100%    |24      |13      |3       |40            |20.3 |
 |Task 9  |0%      |        |        |        |0             |0.0  |
 |Task 10 |100%    |4       |4       |1       |9             |5.6  |
 |Task 11 |100%    |24      |14      |3       |41            |21.4 |
 |Task 12 |0%      |        |        |        |0             |0.0  |
-|SUM     |        |114.0   |78.0    |16.0    |208.0         |115.0|
-|AVERAGE |58%     |16.3    |11.1    |2.7     |17.3          |9.6  |
+|SUM     |        |106.0   |77.0    |16.0    |199.0         |112.3|
+|AVERAGE |58%     |15.1    |11.0    |2.7     |16.6          |9.4  |
 
 ## Results per Task
 
@@ -29,25 +29,25 @@ This task cannot be performed because Rhizomer does not provide a way to define 
 
 **Task 2**. [Find products for a given set of alternative features](Benchmarks/2.md)
 
-| Interaction Steps                                               | K | P | H |
-|-----------------------------------------------------------------|---|---|---|
-| 1. Click menu “ProductType” and then “Sheeny” submenu           | 2 | 2 | 1 |
-| 2. Click “Show values” for facet “Product Feature”              | 1 | 1 |   |
-| 3. Click facet value “stroboscopes”                             | 1 | 1 |   |
-| 4. Type in input “Search Product Feature” “gad...”              | 4 | 1 | 1 |
-| 5. Select “gadgeteers” from autocomplete                        | 1 | 1 | 1 |
-| 6. Set left side of “Product Property Numeric1”slider to “450”  | 1 | 2 |   |
-| Total KLM Operations                                            | 10| 8 | 3 |
-| Speed                                                           |    12     |
+| Interaction Steps                                            |  K |  P |  H |
+|--------------------------------------------------------------|----|----|----|
+| 1. Click menu “ProductType” and then “Sheeny” submenu        |  2 |  2 |  1 |
+| 2. Click “Show values” for facet “Product Feature”           |  1 |  1 |    |
+| 3. Click facet value “stroboscopes”                          |  1 |  1 |    |
+| 4. Type in input “Search Product Feature” “gad...”           |  4 |  1 |  1 |
+| 5. Select “gadgeteers” from autocomplete                     |  1 |  1 |  1 |
+| 6. Set left side of property "Numeric1" slider to "450"      |  1 |  2 |    |
+| Total KLM Operations                                         | 10 |  8 |  3 |
+| Speed                                                        |      12      |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](Benchmarks/3.md)
 
 From Task 2 Rhizomer shows the list of selected products and a short description for each one (label, types and comment). Click the product label link to retrieve all the metadata for that product.
 
-| Interaction Steps                                               | K | P | H |
-|-----------------------------------------------------------------|---|---|---|
-| 1. Click product label "boozed"                                 | 1 | 1 |   |
-| Speed                                                           |    1.3    |
+| Interaction Steps                                            |  K |  P |  H |
+|--------------------------------------------------------------|----|----|----|
+| 1. Click product label "boozed"                              |  1 |  1 |    |
+| Speed                                                        |     1.3      |
 
 **Task 4**. [Find products having some specific features and not having one feature](Benchmarks/4.md)
 
@@ -69,7 +69,7 @@ The user can look for a specific product. As a result, the corresponding faceted
 | 4. Click to remove restriction for current product           |  1 |  1 |    |
 | 5. Set sliders for numeric properties 1 and 2 ranges         |  4 |  8 |    |
 | Total Operators                                              | 38 | 36 |  3 |
-| Speed                                                        |      12      |
+| Speed                                                        |    12.0      |
 
 **Task 7**. [Find products having a name that contains some text](Benchmarks/7.md)
 
@@ -77,8 +77,8 @@ The user can directly use the “Quick search...” input box at the top, type �
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
-| 1. Type "waterskiing" in search form and click autocomplete  | 13 |  2 |  3 |
-| Speed                                                        |       6      |
+| 1. Type "ales" in search form, results in autocomplete       |  5 |  1 |  3 |
+| Speed                                                        |     3.3      |
 
 Alternative: click “Product” in the menu and then use the “label” facet to search for label values containing water.
 
