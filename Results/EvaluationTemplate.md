@@ -4,21 +4,22 @@ This document reports the results for the SDEBM benchmark for the [LINK](url) to
 
 ## Summary
 
-| Benchmark | Capacity | Operators Count |  K |  P |  H | Speed |
-|-----------|----------|-----------------|----|----|----|-------|
-| 1         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 2         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 3         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 4         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 5         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 6         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 7         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 8         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 9         | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 10        | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 11        | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 12        | 0%|100%  |        n        |  x |  y |  z |   0.0 |
-| 13        | 0%|100%  |        n        |  x |  y |  z |   0.0 |
+|TOOLNAME|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Speed|
+|--------|--------|--------|--------|--------|--------------|-----|
+|Task 1  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 2  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 3  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 4  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 5  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 6  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 7  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 8  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 9  | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 10 | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 11 | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|Task 12 | 0%-100%|    x   |    y   |    z   |       n      |0.0  |
+|SUM     |        |    X   |    Y   |    Z   |       N      |0.0  |
+|AVERAGE | 50%    |   0.0  |   0.0  |   0.0  |      0.0     |0.0  |
 
 ## Results per Task
 
