@@ -1,6 +1,6 @@
 # SDEBM
 
-Structured Data Exploration BenchMark (SDEBM) inspired by the Berlin SPARQL Benchmark (BSBM) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine.
+Structured Data Exploration BenchMark (SDEBM) based on the [Berlin SPARQL Benchmark (BSBM)](http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine.
 
 > Roberto García, Rosa Gil, Juan Manuel Gimeno, Eirik Bakke, David R. Karger. (2016). Structured Data Exploration Benchmark (SDEBM). Available from: http://w3id.org/SDEBM
 
