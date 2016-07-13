@@ -8,18 +8,18 @@ This document reports the results for the SDEBM benchmark for the [Virtuoso](htt
 |--------|--------|--------|--------|--------|--------------|-----|
 |Task 1  |100%    |28      |18      |5       |51            |27.4 |
 |Task 2  |100%    |29      |19      |5       |53            |28.7 |
-|Task 3  |100%    |1       |1       |        |2             |1.3  |
-|Task 4  |0%      |        |        |        |0             |0.0  |
-|Task 5  |0%      |        |        |        |0             |0.0  |
-|Task 6  |0%      |        |        |        |0             |0.0  |
-|Task 7  |0%      |        |        |        |0             |0.0  |
+|Task 3  |100%    |9       |2       |3       |14            |5.2  |
+|Task 4  |0%      |        |        |        |              |     |
+|Task 5  |0%      |        |        |        |              |     |
+|Task 6  |0%      |        |        |        |              |     |
+|Task 7  |0%      |        |        |        |              |     |
 |Task 8  |100%    |33      |21      |3       |57            |30.9 |
-|Task 9  |0%      |        |        |        |0             |0.0  |
-|Task 10 |100%    |2       |2       |        |4             |2.6  |
+|Task 9  |0%      |        |        |        |              |     |
+|Task 10 |100%    |2       |2       |0       |4             |2.6  |
 |Task 11 |100%    |41      |26      |5       |72            |38.8 |
-|Task 12 |0%      |        |        |        |0             |0.0  |
-|SUM     |        |134.0   |87.0    |18.0    |239.0         |129.7|
-|AVERAGE |50%     |22.3    |14.5    |4.5     |19.9          |10.8 |
+|Task 12 |50%     |1       |1       |0       |2             |1.3  |
+|SUM     |        |143     |89      |21      |253           |134.9|
+|AVERAGE |54%     |20.4    |12.7    |3.0     |36.1          |19.3 |
 
 ## Results per Task
 
@@ -64,14 +64,14 @@ Virtuoso also supports this task in a very similar way to Task 1, though in this
 **Task 3**. [Retrieve basic information about a specific product for display purposes](/Benchmark/3.md)
 > "Get details about product **boozed**".
 
-From Task one Virtuoso shows the list of selected products. Click any product to retrieve all the metadata for the selected product..
-
-The interaction steps and KLM Operators are:
+Using the entry page search box, the user types “boozed” and finally clicks the entry for the requested product in the results listing to get the product details.
 
 | Interaction Steps                                               | K | P | H |
 |-----------------------------------------------------------------|---|---|---|
-| 1. Click product label "driveled"                               | 1 | 1 |   |
-| Speed                                                           |    1.3    |
+| 1. Type "boozed" in search form and "Enter"                     | 8 | 1 | 2 |
+| 2. Point to the "boozed" product entry in results               | 1 | 1 | 1 |
+| Total KLM Operations                                            | 9 | 2 | 3 |
+| Speed                                                           |    5.2    |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -150,6 +150,10 @@ Virtuoso does not provide a mechanism to filter literals by language.
 | Speed                                                           |           |
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
-> "Save in the local computer the information about the vendor for **Offer3499** and, if possible, restrict it to just label, homepage and country and map them to  **schema.org** terms name, url and nationality".
+> "Save in the local computer the information about the vendor for **Offer3499**, this is **half** the task. To **complete** it, restrict the output to just label, homepage and country and **map** them to schema.org terms name, url and nationality".
 
-Currently, Virtuoso Facet does not provide a way to map data and export it using a different schema.
+Currently, Virtuoso Facet can just export the data, but not map it using a different schema. Consequently, half of the task can be completed and the Capacity measure is 50%.
+
+| Interaction Steps                                            |  K |  P |  H |
+|--------------------------------------------------------------|----|----|----|
+| 1. Click the desired output format from the page footer      |  1 |  1 |    |
