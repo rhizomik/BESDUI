@@ -45,3 +45,11 @@ For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/usi
 | K: button press or keystroke, keys and not characters.                                                                              | 0.2            |
 | P: pointing to a target on a display with a mouse. Time differs depending on distance and size of the target, but is held constant. | 1.1            |
 | H: homing the hand(s) on the keyboard or other device, this includes movement between any two devices.                              | 0.4            |
+
+## Results
+
+Currently, the SDEBM has been applied to the following tools:
+
+* **[Rhizomer](/Results/Rhizomer)**: a semantic data exploration tool.
+* **[Virtuoso](/Results/Virtuoso)**: the faceted browser for the Virtuoso RDF data store.
+* **[Sieuferd](/Results/Sieuferd)**: a general-purpose user interface for relational databases.
