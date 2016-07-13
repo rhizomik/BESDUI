@@ -19,7 +19,7 @@ This document reports the results for the SDEBM benchmark for the [Rhizomer](htt
 |Task 11 |100%    |24      |14      |3       |41            |21.4 |
 |Task 12 |0%      |        |        |        |              |     |
 |SUM     |        |111     |76      |18      |205           |113  |
-|AVERAGE |58%     |15.9    |10.9    |3.0     |29.3          |16.1 |
+|AVERAGE |58%     |15.9    |10.9    |2.6     |29.3          |16.1 |
 
 ## Results per Task
 
