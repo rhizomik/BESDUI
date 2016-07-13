@@ -6,21 +6,20 @@ This document reports the results for the SDEBM benchmark for the [Rhizomer](htt
 
 |RHIZOMER|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Speed|
 |--------|--------|--------|--------|--------|--------------|-----|
-|Task 1  |0%      |        |        |        |0             |0.0  |
+|Task 1  |0%      |        |        |        |              |     |
 |Task 2  |100%    |10      |8       |3       |21            |12.0 |
-|Task 3  |100%    |1       |1       |        |2             |1.3  |
-|Task 4  |0%      |        |        |        |0             |0.0  |
-|Task 5  |0%      |        |        |        |0             |0.0  |
+|Task 3  |100%    |8       |2       |3       |13            |5.0  |
+|Task 4  |0%      |        |        |        |              |     |
+|Task 5  |0%      |        |        |        |              |     |
 |Task 6  |100%    |38      |36      |3       |77            |48.4 |
 |Task 7  |100%    |5       |1       |3       |9             |3.3  |
 |Task 8  |100%    |24      |13      |3       |40            |20.3 |
-|Task 9  |0%      |        |        |        |0             |0.0  |
+|Task 9  |0%      |        |        |        |              |     |
 |Task 10 |100%    |2       |2       |        |4             |2.6  |
 |Task 11 |100%    |24      |14      |3       |41            |21.4 |
-|Task 12 |0%      |        |        |        |0             |0.0  |
-|SUM     |        |104.0   |75.0    |15.0    |194.0         |109.3|
-|AVERAGE |58%     |14.9    |10.7    |3.0     |16.2          |9.1  |
-
+|Task 12 |0%      |        |        |        |              |     |
+|SUM     |        |111     |76      |18      |205           |113  |
+|AVERAGE |58%     |15.9    |10.9    |3.0     |29.3          |16.1 |
 
 ## Results per Task
 
@@ -46,12 +45,12 @@ This task cannot be performed because Rhizomer does not provide a way to define 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](/Benchmark/3.md)
 > "Get details about product **boozed**".
 
-From Task 2 Rhizomer shows the list of selected products and a short description for each one (label, types and comment). Click the product label link to retrieve all the metadata for that product.
+From the entry page, type the product name in the "Quick search..." input box and select the requested product name.
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
-| 1. Click product label "boozed"                              |  1 |  1 |    |
-| Speed                                                        |     1.3      |
+| 1. Point search form, type "boozed" and click in autocomplete|  8 |  2 |  3 |
+| Speed                                                        |       5      |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -81,7 +80,7 @@ The user can look for a specific product. As a result, the corresponding faceted
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
 
-The user can directly use the “Quick search...” input box at the top, type “waterskiing” and a list of entities whose label contains “waterskiing” is shown, from where the user can select the one he is interested in.
+The user can directly use the “Quick search...” input box at the top, type “ales” and a list of entities whose label contains “ales” is shown, from where the user can select the one he is interested in.
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
@@ -141,6 +140,6 @@ Rhizomer does not currently provide a mechanism to filter literals by language.
 | Speed                                                        |     21.4     |
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
-> "Save in the local computer the information about the vendor for **Offer3499** and, if possible, restrict it to just label, homepage and country and map them to  **schema.org** terms name, url and nationality".
+> "Save in the local computer the information about the vendor for **Offer3499**, this is **half** the task. To **complete** it, restrict the output to just label, homepage and country and **map** them to schema.org terms name, url and nationality".
 
 Currently, Rhizomer does not provide a way to map data and export it using a different schema.
