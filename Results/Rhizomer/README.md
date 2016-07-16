@@ -4,7 +4,7 @@ This document reports the results for the SDEBM benchmark for the [Rhizomer](htt
 
 ## Summary
 
-|RHIZOMER|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Speed|
+|RHIZOMER|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
 |--------|--------|--------|--------|--------|--------------|-----|
 |Task 1  |0%      |        |        |        |              |     |
 |Task 2  |100%    |10      |8       |3       |21            |12.0 |
@@ -40,7 +40,7 @@ This task cannot be performed because Rhizomer does not provide a way to define 
 | 5. Select “gadgeteers” from autocomplete                     |  1 |  1 |  1 |
 | 6. Set left side of property "Numeric1" slider to "450"      |  1 |  2 |    |
 | Total KLM Operations                                         | 10 |  8 |  3 |
-| Speed                                                        |      12      |
+| Time                                                         |      12      |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](/Benchmark/3.md)
 > "Get details about product **boozed**".
@@ -50,7 +50,7 @@ From the entry page, type the product name in the "Quick search..." input box an
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
 | 1. Point search form, type "boozed" and click in autocomplete|  8 |  2 |  3 |
-| Speed                                                        |       5      |
+| Time                                                         |       5      |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -75,7 +75,7 @@ The user can look for a specific product. As a result, the corresponding faceted
 | 4. Click to remove restriction for current product           |  1 |  1 |    |
 | 5. Set sliders for numeric properties 1 and 2 ranges         |  4 |  8 |    |
 | Total Operators                                              | 38 | 36 |  3 |
-| Speed                                                        |    12.0      |
+| Time                                                         |    12.0      |
 
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
@@ -85,7 +85,7 @@ The user can directly use the “Quick search...” input box at the top, type �
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
 | 1. Type "ales" in search form, results in autocomplete       |  5 |  1 |  3 |
-| Speed                                                        |     3.3      |
+| Time                                                         |     3.3      |
 
 Alternative: click “Product” in the menu and then use the “label” facet to search for label values containing water.
 
@@ -106,7 +106,7 @@ Alternative: not supported yet, “Quick search...” in addition to autocomplet
 | 8. Pivot to related products using "Filter Product"          |  1 |  1 |    |
 | 9. Pivot to related reviews using "Filter Review"            |  1 |  1 |    |
 | Total Operators                                              | 24 | 13 |  3 |
-| Speed                                                        |     20.3     |
+| Time                                                         |     20.3     |
 
 **Task 9**. [Give me recent reviews in English for a specific product](/Benchmark/9.md)
 > "For the product **waterskiing sharpness horseshoes** list the **20** more recent **reviews** in **English**".
@@ -121,7 +121,7 @@ Rhizomer does not currently provide a mechanism to filter literals by language.
 | 1. Click "Review5481" to expand info                         |  1 |  1 |    |
 | 2. Click "Reviewer268" to get details                        |  1 |  1 |    |
 | Total Operators                                              |  2 |  2 |    |
-| Speed                                                        |     2.6      |
+| Time                                                         |     2.6      |
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](/Benchmark/11.md)
 > "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
@@ -137,7 +137,7 @@ Rhizomer does not currently provide a mechanism to filter literals by language.
 | 6. Slide “Delivery days” to 3 or less days                   |  1 |  2 |    |
 | 8. Select "price" in "Sort by" selector                      |  2 |  2 |    |
 | Total Operators                                              | 24 | 14 |  3 |
-| Speed                                                        |     21.4     |
+| Time                                                         |     21.4     |
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
 > "Save in the local computer the information about the vendor for **Offer3499**, this is **half** the task. To **complete** it, restrict the output to just label, homepage and country and **map** them to schema.org terms name, url and nationality".

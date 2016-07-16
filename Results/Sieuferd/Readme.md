@@ -4,7 +4,7 @@ This document reports the results for the SDEBM benchmark for the [SIEUFERD](htt
 
 ## Summary
 
-|SIEUFERD|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Speed|
+|SIEUFERD|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time|
 |--------|--------|--------|--------|--------|--------------|-----|
 |Task 1|100%|47|19|1|67|30.70|
 |Task 2|100%|38|19|1|58|28.90|
@@ -39,7 +39,7 @@ In the following interaction sequences, it is assumed that foreign key relations
 |7. Key the cursor to the calculated column and type the formula "=[propertyNum1]>450 and count([productfeature\label])=2" (field references inserted by arrow keypresses)|17|0|1|
 |8. Filter to show only products for which the formula is "true" (use keyboard shortcut since hand is already on keyboard)|6|0|0|
 |Total Operators|47|19|1|
-|Speed|30.7|||
+|Time|30.7|||
 
 In the future, we expect to implement range filters so that conditions such as "=[propertyNum1]>450" can be expressed without the use of a formula.
 
@@ -57,7 +57,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |7. Key the cursor to the calculated column and type the formula "=[propertyNum1]>450" (field reference inserted by single arrow keypress)|8|0|1|
 |8. Filter to show only products for which the formula is "true" (use keyboard shortcut since hand is already on keyboard)|6|0|0|
 |Total Operators|38|19|1|
-|Speed|28.9|||
+|Time|28.9|||
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](/Benchmark/3.md)
 > "Get details about product **boozed**".
@@ -69,7 +69,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |3. Open the filter box (keyboard shortcut)|1|0|0|
 |4. Type "boozed", down, down, space, enter|10|0|0|
 |Total Operators|23|3|1|
-|Speed|8.3|||
+|Time|8.3|||
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -87,7 +87,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |9. Key the cursor to the calculated column and type the formula "=[propertyNum1]>300 and [propertyNum3]<400" (field references inserted by arrow key presses)|17|0|1|
 |10. Filter to show only products for which the formula is "true" (use keyboard shortcut since hand is already on keyboard)|6|0|0|
 |Total Operators|62|32|1|
-|Speed|48.0|||
+|Time|48.0|||
 
 **Task 5**. [Find products matching two different sets of features](/Benchmark/5.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers** and a **productPropertyNumeric1** value greater than **300** plus those of the same product type with product features **stroboscopes** and **rotifers** and a **productPropertyNumeric2** greater than **400**".
@@ -104,7 +104,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |18. Key the cursor to the calculated column and type the formula "=[pfp2.pf.label]='gadgeteers' and [propertyNum1]>300 or [pfp2.pf.label]='rotifiers' and [propertyNum2]>400" (field references inserted by mouse clicks)|52|4|4|
 |19. Filter to show only products for which the formula is "true" (use keyboard shortcut since hand is already on keyboard)|6|0|0|
 |Total Operators|92|32|4|
-|Speed|55.2|||
+|Time|55.2|||
 
 **Task 6**. [Find products that are similar to a given product](/Benchmark/6.md)
 > "Look for products similar to **boozed**, with at least one shared feature, and a **productPropertyNumeric1** value between **427 and 627** (100 more or less than its value for boozed, 527) and a **productPropertyNumeric2** value between **545 and 945** (200 more or less than its value for boozed, 745)".
@@ -124,7 +124,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |11. Change "propertyNum1" to "propertyNum3" in each place in the formula in the formula bar, and "100" to "200".|20|6|7|
 |12. Filter the two formulas to only include values of "true"|12|0|0|
 |Total Operators|87|40|14|
-|Speed|67.0|||
+|Time|67.0|||
 
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
@@ -134,7 +134,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |1. Create and open a perspective from the "product" table|4|3|0|
 |2. Open the filter and type "ales"|5|0|1|
 |3. Select all the results (multiple selection via page down + space), then press enter to close the filter popup|6|0|0|
-|Total Operators|15|3|1||Speed|6.7|||
+|Total Operators|15|3|1||Time|6.7|||
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](/Benchmark/8.md)
 > "For the product **waterskiing sharpness horseshoes** list details for all its **offers** by Chinese vendors and still valid by **2008-05-28** plus details for all **reviews** for this product having either **rating1 or rating2**".
@@ -151,7 +151,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |8. Filter to show only products for which the formula is "true" (use keyboard shortcut since hand is already on keyboard)|6|0|0|
 |9. Deactivate "Hide Parent if Empty" on the "offers" table instance (to avoid hiding the product if there are no offers satisfying the constraint--needed if we want to be technically equivalent to the left join in the SQL query example)|2|0|1|
 |Total Operators|60|24|4|
-|Speed|40.0|||
+|Time|40.0|||
 
 **Task 9**. [Give me recent reviews in English for a specific product](/Benchmark/9.md)
 > "For the product **waterskiing sharpness horseshoes** list the **20** more recent **reviews** in **English**".
@@ -164,7 +164,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |4. Make the "review" table instance visible and its relevant fields.|7|6|0|
 |5. Filter "review.language" on "en"|4|3|0|
 |6. Sort descending on "reviewDate" (there is no LIMIT to be specified; the user can simply look at the 20 topmost rows. Explicit limits could be supported by allowing the row_number() window aggregate function in formulas)|2|2|0|
-|Total Operators|27|15|2||Speed|22.7|||
+|Total Operators|27|15|2||Time|22.7|||
 
 **Task 10**. [Get information about a reviewer](/Benchmark/10.md)
 > "Get all available information about the author of **Review5481**".
@@ -174,7 +174,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |1. Create and open a perspective from the "review" table|4|3|0|
 |2. Show the "review.nr" and "review.person" fields, and all fields under "review.person"|10|9|0|
 |3. Filter "nr" to show only Review5481 (use keyboard shortcuts)|10|0|1|
-|Total Operators|24|12|1||Speed|18.4|||
+|Total Operators|24|12|1||Time|18.4|||
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](/Benchmark/11.md)
 > "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
@@ -192,7 +192,7 @@ In the future, we expect to implement range filters so that conditions such as "
 |9. Sort ascending on "product.offer.price"|2|2|0|
 |10. Filter on "product.offer.deliveryDays" to include "1", "2", and "3"|6|5|0|
 |Total Operators|61|24|3|
-|Speed|39.8|||
+|Time|39.8|||
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
 > "Save in the local computer the information about the vendor for **Offer3499** and, if possible, restrict it to just label, homepage and country and map them to  **schema.org** terms name, url and nationality".
@@ -210,4 +210,4 @@ SIEUFERD does not yet have a data export feature, although results may be retrie
 |7. Rename "country" to "nationality".|12|0|0|
 |8. Export to CSV. (Assume this feature exists.)|4|4|0|
 |Total Operators|48|14|2|
-|Speed|25.8|||
+|Time|25.8|||

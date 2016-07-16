@@ -38,7 +38,7 @@ For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/usi
 
 * **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
 * **Operation Count** (efficiency): how many KLM Operators are required to complete the task.
-* **Speed** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in the table below. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
+* **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in the table below. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
 
 | KLM Operator                                                                                                                        | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|

@@ -4,7 +4,7 @@ This document reports the results for the SDEBM benchmark for the [Virtuoso](htt
 
 ## Summary
 
-|VIRTUOSO|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Speed|
+|VIRTUOSO|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
 |--------|--------|--------|--------|--------|--------------|-----|
 |Task 1  |100%    |28      |18      |5       |51            |27.4 |
 |Task 2  |100%    |29      |19      |5       |53            |28.7 |
@@ -39,7 +39,7 @@ Virtuoso Facets can complete this task and the outcome is the expected consideri
 | 7. Click “Add condition: None” and select “>”                   | 2 | 2 |   |
 | 8. Type “450” and click “Set Condition”                         | 5 | 2 | 2 |
 | Total KLM Operations                                            | 28| 18| 5 |
-| Speed                                                           |    27.4   |
+| Time                                                            |    27.4   |
 
 **Task 2**. [Find products for a given set of alternative features](/Benchmark/2.md)
 > "List products of type **sheeny** with product features **stroboscopes** OR **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
@@ -59,7 +59,7 @@ Virtuoso also supports this task in a very similar way to Task 1, though in this
 | 7. Click “Add condition: None” and select “>”                   | 2 | 2 |   |
 | 8. Type “450” and click “Set Condition”                         | 5 | 2 | 2 |
 | Total KLM Operations                                            | 29| 19| 5 |
-| Speed                                                           |    28.7   |
+| Time                                                            |    28.7   |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](/Benchmark/3.md)
 > "Get details about product **boozed**".
@@ -71,7 +71,7 @@ Using the entry page search box, the user types “boozed” and finally clicks 
 | 1. Type "boozed" in search form and "Enter"                     | 8 | 1 | 2 |
 | 2. Point to the "boozed" product entry in results               | 1 | 1 | 1 |
 | Total KLM Operations                                            | 9 | 2 | 3 |
-| Speed                                                           |    5.2    |
+| Time                                                            |    5.2    |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -110,7 +110,7 @@ Virtuoso does not generate REGEX-based queries and the "bif:contains" does not s
 | 10. Click "Set IN Condition"                                    | 1 | 1 |   |
 | 11. Click "Values" and select "reviewFor"                       | 2 | 2 |   |
 | Total KLM Operations                                            |33 |21 | 3 |
-| Speed                                                           |   30.9    |
+| Time                                                            |   30.9    |
 
 **Task 9**. [Give me recent reviews in English for a specific product](/Benchmark/9.md)
 > "For the product **waterskiing sharpness horseshoes** list the **20** more recent **reviews** in **English**".
@@ -125,7 +125,7 @@ Virtuoso does not provide a mechanism to filter literals by language.
 | 1. Click "Describe" for review                               |  1 |  1 |    |
 | 2. Click "reviewer" value "Stansie-Klenja"                   |  1 |  1 |    |
 | Total Operators                                              |  2 |  2 |    |
-| Speed                                                        |     2.6      |
+| Time                                                         |     2.6      |
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](/Benchmark/11.md)
 > "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
@@ -147,7 +147,7 @@ Virtuoso does not provide a mechanism to filter literals by language.
 | 13. Type “3” and click “Set Condition”                          | 5 | 2 | 2 |
 | 14. Go back to offers clicking "?s2"                            | 1 | 1 |   |
 | Total KLM Operations                                            |41 |26 | 5 |
-| Speed                                                           |           |
+| Time                                                            |   38.8    |
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
 > "Save in the local computer the information about the vendor for **Offer3499**, this is **half** the task. To **complete** it, restrict the output to just label, homepage and country and **map** them to schema.org terms name, url and nationality".
@@ -157,3 +157,4 @@ Currently, Virtuoso Facet can just export the data, but not map it using a diffe
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
 | 1. Click the desired output format from the page footer      |  1 |  1 |    |
+| Time                                                         |      1.3     |
