@@ -1,8 +1,9 @@
-# SDEBM
+# BESDUI
 
-Structured Data Exploration BenchMark (SDEBM) based on the [Berlin SPARQL Benchmark (BSBM)](http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine.
+Benchmark for End-User Structured Data User Interfaces (BESDUI) based on the [Berlin SPARQL Benchmark (BSBM)](http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine.
 
-> Roberto García, Rosa Gil, Juan Manuel Gimeno, Eirik Bakke, David R. Karger. (2016). Structured Data Exploration Benchmark (SDEBM). Available from: http://w3id.org/SDEBM
+> Roberto García, Rosa Gil, Juan Manuel Gimeno, Eirik Bakke, David R. Karger. (2016). BESDUI: A Benchmark for End-User 
+Structured Data User Interfaces. Available from: http://w3id.org/BESDUI
 
 Please, look at [CONTRIBUTING](CONTRIBUTING.md) and [LICENSE](LICENSE) to know how you can contribute to the benchmark.
 
@@ -48,7 +49,7 @@ For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/usi
 
 ## Results
 
-Currently, the SDEBM has been applied to the following tools:
+Currently, the BESDUI has been applied to the following tools:
 
 * **[Rhizomer](/Results/Rhizomer)**: a semantic data exploration tool.
 * **[Virtuoso](/Results/Virtuoso)**: the faceted browser for the Virtuoso RDF data store.

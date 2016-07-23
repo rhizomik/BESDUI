@@ -1,6 +1,6 @@
-# SDEBM Results for ...
+# BESDUI Results for ...
 
-This document reports the results for the SDEBM benchmark for the [LINK](url) tool.
+This document reports the results for the BESDUI benchmark for the [LINK](url) tool.
 
 ## Summary
 

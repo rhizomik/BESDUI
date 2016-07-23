@@ -1,6 +1,6 @@
-# SDEBM Results for Virtuoso
+# BESDUI Results for Virtuoso
 
-This document reports the results for the SDEBM benchmark for the [Virtuoso](http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/) tool.
+This document reports the results for the BESDUI benchmark for the [Virtuoso](http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/) tool.
 
 ## Summary
 

@@ -1,6 +1,6 @@
-# SDEBM Results for SIEUFERD
+# BESDUI Results for SIEUFERD
 
-This document reports the results for the SDEBM benchmark for the [SIEUFERD](http://people.csail.mit.edu/ebakke/sieuferd) tool.
+This document reports the results for the BESDUI benchmark for the [SIEUFERD](http://people.csail.mit.edu/ebakke/sieuferd) tool.
 
 ## Summary
 
