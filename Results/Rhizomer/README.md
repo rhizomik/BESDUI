@@ -113,7 +113,7 @@ Alternative: not supported yet, “Quick search...” in addition to autocomplet
 
 Rhizomer does not currently provide a mechanism to filter literals by language.
 
-**Task 10**. [Get information about a reviewer](/Benchmarks/10.md)
+**Task 10**. [Get information about a reviewer](/Benchmark/10.md)
 > "Get all available information about the author of **Review5481**".
 
 | Interaction Steps                                            |  K |  P |  H |
