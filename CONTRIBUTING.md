@@ -2,7 +2,7 @@
 
 Please, to contribute to the Benchmark for End-User Structured Data User Interfaces (BESDUI), **FORK** this repository and, when your evaluation is completed, perform a **PULL REQUEST** to contribute your changes.
 
-The data to be loaded to perform the evaluation is available from the [Datasets](Datasets) folder. The [bsbm-1000products.ttl.tgz](Datasets(bsbm-1000products.ttl.tgz) file contains the RDF version of the data.
+The data to be loaded to perform the evaluation is available from the [Datasets](Datasets) folder. The [bsbm-1000products.ttl.tgz](Datasets/bsbm-1000products.ttl.tgz) file contains the RDF version of the test data.
 
 To apply the benchmark, **perform each one of the tasks** with the evaluated tool and check if the expected results are obtained. If they are not, or it is **not possible** to complete the task, then report a **0% for the Capacity metric** for that task. **Otherwise**, the **Capacity is 100%**. In this case, also report how many **KLM operators** are required to complete the task. The operators are the basic user interactions:
 
