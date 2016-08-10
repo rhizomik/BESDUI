@@ -54,3 +54,9 @@ Currently, the BESDUI has been applied to the following tools:
 * **[Rhizomer](/Results/Rhizomer)**: a semantic data exploration tool.
 * **[Virtuoso](/Results/Virtuoso)**: the faceted browser for the Virtuoso RDF data store.
 * **[Sieuferd](/Results/Sieuferd)**: a general-purpose user interface for relational databases.
+
+|Averages per Tool|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
+|-----------------|--------|--------|--------|--------|--------------|-----|
+|   RHIZOMER      | 58%    | 15.9   | 10.9   | 2.6    | 29.3         |16.1 |
+|   VIRTUOSO      | 54%    | 20.4   | 12.7   | 3.0    | 36.1         |19.3 |
+|   SIEUFERD      | 96%    | 48.7   | 19.75  | 2.92   | 71.3         |32.63|
