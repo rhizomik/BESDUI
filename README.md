@@ -40,6 +40,7 @@ For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/usi
 * **Capacity** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
 * **Operation Count** (efficiency): how many KLM Operators are required to complete the task.
 * **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in the table below. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
+* **Time Efficiency** (effectiveness/efficiency): measured as the ratio of effectivness to efficiency, corresponds to "goals per second".
 
 | KLM Operator                                                                                                                        | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
@@ -56,9 +57,9 @@ Currently, the BESDUI has been applied to the following tools:
 * **[Sieuferd](/Results/Sieuferd)**: a general-purpose user interface for relational databases.
 * **[PepeSearch](/Results/PepeSearch)**: a search interface for querying SPARQL endpoints.
 
-|Averages per Tool|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
-|-----------------|--------|--------|--------|--------|--------------|-----|
-|   RHIZOMER      | 58%    | 15.9   | 10.9   | 2.6    | 29.3         |16.1 |
-|   VIRTUOSO      | 54%    | 20.4   | 12.7   | 3.0    | 36.1         |19.3 |
-|   SIEUFERD      | 96%    | 48.7   | 19.75  | 2.92   | 71.3         |32.63|
-|   PEPESEARCH    | 25%    | 10.3   |  5.3   | 5.3    | 21.0         |10.1 |
+|Averages per Tool|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|  Time  |Time Efficiency|
+|-----------------|--------|--------|--------|--------|--------------|--------|---------------|
+|   RHIZOMER      |  58%   | 15.9   | 10.9   | 2.6    |   29.3       |  16.1  |   **3.60**    |
+|   VIRTUOSO      |  54%   | 20.4   | 12.7   | 3.0    |   36.1       |  19.3  |     2.80      |
+|   SIEUFERD      |**96%** | 48.7   | 19.75  | 2.92   |   71.3       |  32.63 |     2.94      |
+|   PEPESEARCH    |  25%   | 10.3   |  5.3   | 5.3    | **21.0**     |**10.1**|     2.48      |
