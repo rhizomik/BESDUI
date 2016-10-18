@@ -40,8 +40,7 @@ For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/usi
 * **Capability** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
 * **Operation Count** (efficiency): how many KLM Operators are required to complete the task.
 * **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in the table below. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
-* **Time Efficiency** (effectiveness/efficiency): measured as the ratio of effectivness to efficiency, corresponds to "goals per second".
-
+* **Time Efficiency** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second".
 | KLM Operator                                                                                                                        | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
 | K: button press or keystroke, keys and not characters.                                                                              | 0.2            |
