@@ -4,7 +4,7 @@ This document reports the results for the BESDUI benchmark for the [Rhizomer](ht
 
 ## Summary
 
-|RHIZOMER|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
+|RHIZOMER|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
 |--------|--------|--------|--------|--------|--------------|-----|
 |Task 1  |0%      |        |        |        |              |     |
 |Task 2  |100%    |10      |8       |3       |21            |12.0 |

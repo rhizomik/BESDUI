@@ -4,7 +4,7 @@ This document reports the results for the BESDUI benchmark for the [PepeSearch](
 
 ## Summary
 
-|PEPESEARCH|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count| Time |
+|PEPESEARCH|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count| Time |
 |----------|--------|--------|--------|--------|--------------|------|
 |  Task 1  |   0%   |    x   |    y   |    z   |       n      |  0.0 |
 |  Task 2  |   0%   |    x   |    y   |    z   |       n      |  0.0 |

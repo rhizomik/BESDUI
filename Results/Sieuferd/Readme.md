@@ -4,7 +4,7 @@ This document reports the results for the BESDUI benchmark for the [SIEUFERD](ht
 
 ## Summary
 
-|SIEUFERD|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time|
+|SIEUFERD|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time|
 |--------|--------|--------|--------|--------|--------------|-----|
 |Task 1|100%|47|19|1|67|30.70|
 |Task 2|100%|38|19|1|58|28.90|
@@ -197,7 +197,7 @@ In the future, we expect to implement range filters so that conditions such as "
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
 > "Save in the local computer the information about the vendor for **Offer3499** and, if possible, restrict it to just label, homepage and country and map them to  **schema.org** terms name, url and nationality".
 
-SIEUFERD does not yet have a data export feature, although results may be retrieved in a transformed schema; thus we rate SIEUFERD 50% on the "Capacity" scale for this task.
+SIEUFERD does not yet have a data export feature, although results may be retrieved in a transformed schema; thus we rate SIEUFERD 50% on the "Capability" scale for this task.
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|

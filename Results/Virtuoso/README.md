@@ -4,7 +4,7 @@ This document reports the results for the BESDUI benchmark for the [Virtuoso](ht
 
 ## Summary
 
-|VIRTUOSO|Capacity|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
+|VIRTUOSO|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
 |--------|--------|--------|--------|--------|--------------|-----|
 |Task 1  |100%    |28      |18      |5       |51            |27.4 |
 |Task 2  |100%    |29      |19      |5       |53            |28.7 |
@@ -152,7 +152,7 @@ Virtuoso does not provide a mechanism to filter literals by language.
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
 > "Save in the local computer the information about the vendor for **Offer3499**, this is **half** the task. To **complete** it, restrict the output to just label, homepage and country and **map** them to schema.org terms name, url and nationality".
 
-Currently, Virtuoso Facet can just export the data, but not map it using a different schema. Consequently, half of the task can be completed and the Capacity measure is 50%.
+Currently, Virtuoso Facet can just export the data, but not map it using a different schema. Consequently, half of the task can be completed and the Capability measure is 50%.
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
