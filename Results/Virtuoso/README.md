@@ -1,32 +1,32 @@
-# BESDUI Results for Virtuoso
+# BESDUI Results for Virtuoso Faceted Browser
 
-This document reports the results for the BESDUI benchmark for the [Virtuoso](http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/) tool.
+This document reports the results for the BESDUI benchmark for the [Virtuoso FCT](http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtFacetBrowserInstallConfig) tool.
 
 ## Summary
 
-|VIRTUOSO|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
-|--------|--------|--------|--------|--------|--------------|-----|
-|Task 1  |100%    |28      |18      |5       |51            |27.4 |
-|Task 2  |100%    |29      |19      |5       |53            |28.7 |
-|Task 3  |100%    |9       |2       |3       |14            |5.2  |
-|Task 4  |0%      |        |        |        |              |     |
-|Task 5  |0%      |        |        |        |              |     |
-|Task 6  |0%      |        |        |        |              |     |
-|Task 7  |0%      |        |        |        |              |     |
-|Task 8  |100%    |33      |21      |3       |57            |30.9 |
-|Task 9  |0%      |        |        |        |              |     |
-|Task 10 |100%    |2       |2       |0       |4             |2.6  |
-|Task 11 |100%    |41      |26      |5       |72            |38.8 |
-|Task 12 |50%     |1       |1       |0       |2             |1.3  |
-|SUM     |        |143     |89      |21      |253           |134.9|
-|AVERAGE |54%     |20.4    |12.7    |3.0     |36.1          |19.3 |
+|VIRTUOSO FCT|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time |
+|------------|----------|--------|--------|--------|--------------|-----|
+|  Task 1    |  100%    |28      |18      |5       |51            |27.4 |
+|  Task 2    |  100%    |29      |19      |5       |53            |28.7 |
+|  Task 3    |  100%    |9       |2       |3       |14            |5.2  |
+|  Task 4    |    0%    |        |        |        |              |     |
+|  Task 5    |    0%    |        |        |        |              |     |
+|  Task 6    |    0%    |        |        |        |              |     |
+|  Task 7    |    0%    |        |        |        |              |     |
+|  Task 8    |  100%    |33      |21      |3       |57            |30.9 |
+|  Task 9    |    0%    |        |        |        |              |     |
+|  Task 10   |  100%    |2       |2       |0       |4             |2.6  |
+|  Task 11   |  100%    |41      |26      |5       |72            |38.8 |
+|  Task 12   |   50%    |1       |1       |0       |2             |1.3  |
+|    SUM     |          |143     |89      |21      |253           |134.9|
+|  AVERAGE   |   54%    |20.4    |12.7    |3.0     |36.1          |19.3 |
 
 ## Results per Task
 
 **Task 1**. [Find products for a given set of features combined](/Benchmark/1.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
-Virtuoso Facets can complete this task and the outcome is the expected considering the sample dataset, the products “driveled” and “auditoriums reducing pappies”. To complete this task, the interaction steps are and KLM operators are:
+Virtuoso Faceted Browser can complete this task and the outcome is the expected considering the sample dataset, the products “driveled” and “auditoriums reducing pappies”. To complete this task, the interaction steps are and KLM operators are:
 
 | Interaction Steps                                               | K | P | H |
 |-----------------------------------------------------------------|---|---|---|
@@ -44,7 +44,7 @@ Virtuoso Facets can complete this task and the outcome is the expected consideri
 **Task 2**. [Find products for a given set of alternative features](/Benchmark/2.md)
 > "List products of type **sheeny** with product features **stroboscopes** OR **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
-Virtuoso also supports this task in a very similar way to Task 1, though in this case alternative feature values are defined using the “Add condition: IN” feature.
+Virtuoso FCT also supports this task in a very similar way to Task 1, though in this case alternative feature values are defined using the “Add condition: IN” feature.
 
 | Interaction Steps                                               | K | P | H |
 |-----------------------------------------------------------------|---|---|---|
@@ -76,7 +76,7 @@ Using the entry page search box, the user types “boozed” and finally clicks 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
 
-Virtuoso Facets does not seem to support this task. Though it is possible to specify that a property is different from a particular URI, or not int a set of defined URIs, it is not possible to define that a particular URI should not exist.
+Virtuoso Faceted Browser does not seem to support this task. Though it is possible to specify that a property is different from a particular URI, or not int a set of defined URIs, it is not possible to define that a particular URI should not exist.
 
 **Task 5**. [Find products matching two different sets of features](/Benchmark/5.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers** and a **productPropertyNumeric1** value greater than **300** plus those of the same product type with product features **stroboscopes** and **rotifers** and a **productPropertyNumeric2** greater than **400**".
@@ -91,7 +91,7 @@ There is not a way to get a faceted view of a given product and the relax the re
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
 
-Virtuoso does not generate REGEX-based queries and the "bif:contains" does not seem to work with part of words.
+Virtuoso FCT does not generate REGEX-based queries and the "bif:contains" does not seem to work with part of words.
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](/Benchmark/8.md)
 > "For the product **waterskiing sharpness horseshoes** list details for all its **offers** by Chinese vendors and still valid by **2008-05-28** plus details for all **reviews** for this product having either **rating1 or rating2**".
@@ -115,7 +115,7 @@ Virtuoso does not generate REGEX-based queries and the "bif:contains" does not s
 **Task 9**. [Give me recent reviews in English for a specific product](/Benchmark/9.md)
 > "For the product **waterskiing sharpness horseshoes** list the **20** more recent **reviews** in **English**".
 
-Virtuoso does not provide a mechanism to filter literals by language.
+Virtuoso FCT does not provide a mechanism to filter literals by language.
 
 **Task 10**. [Get information about a reviewer](/Benchmark/10.md)
 > "Get all available information about the author of **Review5481**".
@@ -152,7 +152,7 @@ Virtuoso does not provide a mechanism to filter literals by language.
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
 > "Save in the local computer the information about the vendor for **Offer3499**, this is **half** the task. To **complete** it, restrict the output to just label, homepage and country and **map** them to schema.org terms name, url and nationality".
 
-Currently, Virtuoso Facet can just export the data, but not map it using a different schema. Consequently, half of the task can be completed and the Capability measure is 50%.
+Currently, Virtuoso Faceted Browser can just export the data, but not map it using a different schema. Consequently, half of the task can be completed and the Capability measure is 50%.
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
