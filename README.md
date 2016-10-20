@@ -53,13 +53,13 @@ For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/usi
 Currently, the BESDUI has been applied to the following tools:
 
 * **[Rhizomer](/Results/Rhizomer)**: a semantic data exploration tool.
-* **[Virtuoso](/Results/Virtuoso)**: the faceted browser for the Virtuoso RDF data store.
+* **[Virtuoso FCT](/Results/Virtuoso)**: the faceted browser for the Virtuoso RDF data store.
 * **[Sieuferd](/Results/Sieuferd)**: a general-purpose user interface for relational databases.
 * **[PepeSearch](/Results/PepeSearch)**: a search interface for querying SPARQL endpoints.
 
 |Averages per Tool|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|  Time  |Time Efficiency|
 |-----------------|----------|--------|--------|--------|--------------|--------|---------------|
 |   RHIZOMER      |    58%   | 15.9   | 10.9   | 2.6    |   29.3       |  16.1  |   **3.60**    |
-|   VIRTUOSO      |    54%   | 20.4   | 12.7   | 3.0    |   36.1       |  19.3  |     2.80      |
+|   VIRTUOSO FCT  |    54%   | 20.4   | 12.7   | 3.0    |   36.1       |  19.3  |     2.80      |
 |   SIEUFERD      |  **96%** | 48.7   | 19.75  | 2.92   |   71.3       |  32.63 |     2.94      |
 |   PEPESEARCH    |    25%   | 10.3   |  5.3   | 5.3    | **21.0**     |**10.1**|     2.48      |
