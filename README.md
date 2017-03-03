@@ -63,3 +63,9 @@ Currently, the BESDUI has been applied to the following tools:
 |   VIRTUOSO FCT  |    54%   | 20.4   | 12.7   | 3.0    |   36.1       |  19.3  |     2.80      |
 |   SIEUFERD      |  **96%** | 48.7   | 19.75  | 2.92   |   71.3       |  32.63 |     2.94      |
 |   PEPESEARCH    |    25%   | 10.3   |  5.3   | 5.3    | **21.0**     |**10.1**|     2.48      |
+
+## Acknowledgements
+
+This workshop has been partially supported by the research project InDAGuS, Infrastructures for Sustainable Open Government Data with Geospatial Features (Spanish Government TIN2012-37826-C02).
+
+![Ministerio de Economia y Competitividad](http://hswi.referata.com/w/images/2011-Web-EconomiaC-63px.jpg)
