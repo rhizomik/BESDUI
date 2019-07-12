@@ -1,13 +1,17 @@
 # BESDUI
 
-Benchmark for End-User Structured Data User Interfaces (BESDUI) based on the [Berlin SPARQL Benchmark (BSBM)](http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine.
+Benchmark for End-User Structured Data User Interfaces (BESDUI) based on the [Berlin SPARQL Benchmark (BSBM)](http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine. BSBM is just used to provide the data to be explored.
+
+This is a cheap User Interface benchmark as it does not involve users but experts, who measure how many interaction steps are required to complete each of the benchmark tasks, if possible. This also facilitates comparing different tools without the bias that different end-user profiles might introduce. The way to measure this interaction steps and convert them to an estimate of the required time to complete a task is based on the [Keystroke-Level Model (KLM)](https://en.wikipedia.org/wiki/Keystroke-level_model)
+
+Please, look at [CONTRIBUTING](CONTRIBUTING.md) and [LICENSE](LICENSE) to know how you can contribute to the benchmark by applying it to End-User Structured Data User Interfaces.
+
+# Reference
 
 > Roberto García, Rosa Gil, Juan Manuel Gimeno, Eirik Bakke, David R. Karger. (2016). BESDUI: A Benchmark for End-User
 Structured Data User Interfaces. Available from: http://w3id.org/BESDUI
 
-Please, look at [CONTRIBUTING](CONTRIBUTING.md) and [LICENSE](LICENSE) to know how you can contribute to the benchmark.
-
-## Benchmarks
+## Benchmark Tasks
 
 **Task 1**. [Find products for a given set of features combined](Benchmark/1.md)
 
@@ -35,18 +39,23 @@ Please, look at [CONTRIBUTING](CONTRIBUTING.md) and [LICENSE](LICENSE) to know h
 
 ## Metrics
 
-For the moment, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been used, one about effectiveness and two about efficiency:
+Based on benchmark, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been proposed, one about effectiveness and two about efficiency:
 
 * **Capability** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Operation Count** (efficiency): how many KLM Operators are required to complete the task.
-* **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in the table below. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
+* **Operation Count** (efficiency): how many KLM Operators are required to complete the task, as listed in Table 1.
+* **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in Table 1. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
+
+Additionally, there is a combined effectiveness/efficiency metric:
+
 * **Time Efficiency** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second".
 
-| KLM Operator                                                                                                                        | Time (seconds) |
+| Keystroke-Level Model (KLM) Operator                                                                                                                        | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
 | K: button press or keystroke, keys and not characters.                                                                              | 0.2            |
 | P: pointing to a target on a display with a mouse. Time differs depending on distance and size of the target, but is held constant. | 1.1            |
 | H: homing the hand(s) on the keyboard or other device, this includes movement between any two devices.                              | 0.4            |
+
+Table 1. Interaction steps used to complete a benchmark task and their corresponding average time to be completed
 
 ## Results
 
@@ -64,8 +73,10 @@ Currently, the BESDUI has been applied to the following tools:
 |   SIEUFERD      |  **96%** | 48.7   | 19.75  | 2.92   |   71.3       |  32.63 |     2.94      |
 |   PEPESEARCH    |    25%   | 10.3   |  5.3   | 5.3    | **21.0**     |**10.1**|     2.48      |
 
+Table 2. Benchmark results for different End-User Structured Data User Interfaces. Showing the average for all completed benchmark tasks. Best results are in bold
+
 ## Acknowledgements
 
-This workshop has been partially supported by the research project InDAGuS, Infrastructures for Sustainable Open Government Data with Geospatial Features (Spanish Government TIN2012-37826-C02).
+This project has been partially supported by the research project InDAGuS, Infrastructures for Sustainable Open Government Data with Geospatial Features (Spanish Government TIN2012-37826-C02), together with the Universitat de Lleida and the Massachusetts Institute of Technology.
 
-![Ministerio de Economia y Competitividad](http://hswi.referata.com/w/images/2011-Web-EconomiaC-63px.jpg)
+<img src="http://hswi.referata.com/w/images/2011-Web-EconomiaC-63px.jpg" height="60px" alt="Spanish Government, Ministerio de Economia y Competitividad"/>&nbsp;&nbsp;&nbsp;<img src="http://www.eps.udl.cat/export/sites/Eps/UdL-EPS.jpg" height="60px" alt="Universitat de Lleida"/>&nbsp;&nbsp;&nbsp;<img src="https://cdn.www.getsmarter.com/uploads/partner/university_logo/15/mit-csail-logo-light-f40bf6d3c32d99046549389ec42ed1e4.jpg" height="60px" alt="Massachusetts Institute of Technology - Computer Science and Artificial Intelligence Laboratory"/>
