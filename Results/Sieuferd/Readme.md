@@ -18,7 +18,7 @@ This document reports the results for the BESDUI benchmark for the [SIEUFERD](ht
 |Task 10|100%|24|12|1|37|18.40|
 |Task 11|100%|61|24|3|88|39.80|
 |Task 12|50%|48|14|2|64|25.80|
-|SUM|11.5|584|237|35|856|391.50|
+|SUM| |584|237|35|856|391.50|
 |AVERAGE|96%|48.7|19.75|2.92|71.3|32.63|
 
 ## Results per Task

@@ -6,20 +6,20 @@ This document reports the results for the BESDUI benchmark for the [PepeSearch](
 
 |PEPESEARCH|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count| Time |
 |----------|--------|--------|--------|--------|--------------|------|
-|  Task 1  |   0%   |    x   |    y   |    z   |       n      |  0.0 |
-|  Task 2  |   0%   |    x   |    y   |    z   |       n      |  0.0 |
+|  Task 1  |   0%   |        |        |        |              |  0.0 |
+|  Task 2  |   0%   |        |        |        |              |  0.0 |
 |  Task 3  |  100%  |    5   |    3   |    3   |      11      |  5.5 |
-|  Task 4  |   0%   |    x   |    y   |    z   |       n      |  0.0 |
-|  Task 5  |   0%   |    x   |    y   |    z   |       n      |  0.0 |
+|  Task 4  |   0%   |        |        |        |              |  0.0 |
+|  Task 5  |   0%   |        |        |        |              |  0.0 |
 |  Task 6  |  100%  |   22   |   11   |   11   |      44      | 20.9 |
 |  Task 7  |  100%  |    4   |    2   |    2   |       8      |  3.8 |
-|  Task 8  |   0%   |    x   |    y   |    z   |       n      |  0.0 |
-|  Task 9  |   0%   |    x   |    y   |    z   |       n      |  0.0 |
-|  Task 10 |   0%   |    x   |    y   |    z   |       n      |  0.0 |
-|  Task 11 |   0%   |    x   |    y   |    z   |       n      |  0.0 |
-|  Task 12 |   0%   |    x   |    y   |    z   |       n      |  0.0 |
-|  SUM     |        |   31   |    Y   |    Z   |      63      | 30.2 |
-|  AVERAGE |  25%   |   10.3 |    5.3 |    5.3 |      21.0    | 10.1 |
+|  Task 8  |   0%   |        |        |        |              |  0.0 |
+|  Task 9  |   0%   |        |        |        |              |  0.0 |
+|  Task 10 |   0%   |        |        |        |              |  0.0 |
+|  Task 11 |   0%   |        |        |        |              |  0.0 |
+|  Task 12 |   0%   |        |        |        |              |  0.0 |
+|  SUM     |        |   31   |    16  |   16   |      63      | 30.2 |
+|  AVERAGE |  25%   |   10.3 |   5.3  |  5.3   |    21.0      | 10.1 |
 
 ## Results per Task
 

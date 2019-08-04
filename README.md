@@ -47,7 +47,7 @@ Based on benchmark, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8
 
 Additionally, there is a combined effectiveness/efficiency metric:
 
-* **Time Efficiency** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second".
+* **Task Efficiency** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second".
 
 | Keystroke-Level Model (KLM) Operator                                                                                                                        | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
@@ -66,7 +66,7 @@ Currently, the BESDUI has been applied to the following tools:
 * **[Sieuferd](/Results/Sieuferd)**: a general-purpose user interface for relational databases.
 * **[PepeSearch](/Results/PepeSearch)**: a search interface for querying SPARQL endpoints.
 
-|Averages per Tool|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|  Time  |Time Efficiency|
+|Averages per Tool|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|  Time  |Task Efficiency|
 |-----------------|----------|--------|--------|--------|--------------|--------|---------------|
 |   RHIZOMER      |    58%   | 15.9   | 10.9   | 2.6    |   29.3       |  16.1  |   **3.60**    |
 |   VIRTUOSO FCT  |    54%   | 20.4   | 12.7   | 3.0    |   36.1       |  19.3  |     2.80      |
