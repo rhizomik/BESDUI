@@ -49,8 +49,8 @@ From the entry page, type the product name in the "Quick search..." input box an
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
-| 1. Point search form, type "boozed" and click in autocomplete|  8 |  2 |  3 |
-| Time                                                         |       5      |
+| 1. Point search form, type "boozed" and click in autocomplete|  6 |  2 |  3 |
+| Time                                                         |      4.6     |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
