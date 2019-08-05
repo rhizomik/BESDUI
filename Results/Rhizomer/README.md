@@ -49,7 +49,8 @@ From the entry page, type the product name in the "Quick search..." input box an
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
-| 1. Point search form, type "boozed" and click in autocomplete|  6 |  2 |  3 |
+| 1. Click in search form and type "booz"                      |  5 |  1 |  2 |
+| 2. Click "boozed" in autocomplete                            |  1 |  1 |  1 |
 | Time                                                         |      4.6     |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
