@@ -41,12 +41,12 @@ This task cannot be performed because PepeSearch does not allow to set several v
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
-| 1. Select "Product" in the list of concepts                  |    |  1 |  1 |
-| 2. Click on the product label field and type "bo"            |  2 |  1 |  1 |
-| 3. Select “boozed” from autocomplete                         |  2 |    |    |
-| 4. Press enter to get results and select product "boozed"    |  1 |  1 |  1 |
-| Total Operators                                              |  5 |  3 |  3 |
-| Time                                                         |      5.5     |
+| 1. Select "Product" in the list of concepts                  |  1 |  1 |  1 |
+| 2. Click on the product label field and type "bo"            |  3 |  1 |  1 |
+| 3. Select "boozed" from autocomplete                         |  2 |    |    |
+| 4. Click on the product link "boozed"                        |  1 |  1 |  1 |
+| Total Operators                                              |  7 |  3 |  3 |
+| Time                                                         |      5.9     |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -67,25 +67,25 @@ The user begins by searching the product "boozed"", as in Task 3. Then, he creat
 
 | Interaction Steps                                                 |  K |  P |  H |
 |-------------------------------------------------------------------|----|----|----|
-| 1. Get information about product "boozed" (as in Task 4)          |  5 |  3 |  3 |
+| 1. Get information about product "boozed" (as in Task 4)          |  7 |  3 |  3 |
 | 2. Go home and select "Product" in the list of concepts           |    |  2 |    |
 | 3. Expand the collapsible "ProductFeature", click on the label field, type "st" and select "stroboscopes" from autocomplete|  4 |  2 |  1 |
 | 4. Set the range of "productPropertyNumeric1" between 427 and 627 |  6 |  2 |  3 |
 | 5. Set the range of "productPropertyNumeric2" between 545 and 945 |  6 |  2 |  3 |
 | 6. Press enter to get the results                                 |  1 |    |  1 |
-| Total Operators                                                   | 22 | 11 | 11 |
-| Time                                                              |     20.9     |
+| Total Operators                                                   | 24 | 11 | 11 |
+| Time                                                              |     21.3     |
 
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
 
 | Interaction Steps                                                 |  K |  P |  H |
 |-------------------------------------------------------------------|----|----|----|
-| 1. Select "Product" in the list of concepts                       |    |  1 |  1 |
-| 2. Click on the product label field and type "ales"               |  3 |  1 |  1 |
+| 1. Select "Product" in the list of concepts                       |  1 |  1 |  1 |
+| 2. Click on the product label field and type "ales"               |  5 |  1 |  1 |
 | 3. Press enter to get results                                     |  1 |    |    |
-| Total Operators                                                   |  4 |  2 |  2 |
-| Time                                                              |      3.8     |
+| Total Operators                                                   |  7 |  2 |  2 |
+| Time                                                              |      4.4     |
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](/Benchmark/8.md)
 > "For the product **waterskiing sharpness horseshoes** list details for all its **offers** by Chinese vendors and still valid by **2008-05-28** plus details for all **reviews** for this product having either **rating1 or rating2**".
