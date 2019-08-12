@@ -41,13 +41,13 @@ Structured Data User Interfaces. Available from: http://w3id.org/BESDUI
 
 Based on benchmark, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been proposed, one about effectiveness and two about efficiency:
 
-* **Capability** (effectiveness): what proportion of one task is completed. 0% if not possible to complete or 100% otherwise.
-* **Operation Count** (efficiency): how many KLM Operators are required to complete the task, as listed in Table 1.
-* **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in Table 1. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together.
+* **Capability** (effectiveness): what proportion of one task is completed (0% if not possible to complete or 100% otherwise) or, for the whole benchmark, the percentage of all 12 tasks completed.
+* **Operation Count** (efficiency): how many KLM Operators, from Table 1, are required to complete a task or the average count just for completed tasks.
+* **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in Table 1. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together. For the whole benchmark, it is the average time considering just the completed tasks.
 
 Additionally, there is a combined effectiveness/efficiency metric:
 
-* **Task Efficiency** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second".
+* **Task Efficiency** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second". For the whole benchmark it is computed using the percentage of all 12 tasks completed divided by the average time for the completed tasks.
 
 | Keystroke-Level Model (KLM) Operator                                                                                                                        | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
@@ -68,10 +68,10 @@ Currently, the BESDUI has been applied to the following tools:
 
 |Averages per Tool|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|  Time  |Task Efficiency|
 |-----------------|----------|--------|--------|--------|--------------|--------|---------------|
-|   RHIZOMER      |    58%   | 15.9   | 10.9   | 2.6    |   29.3       |  16.1  |   **3.60**    |
-|   VIRTUOSO FCT  |    54%   | 20.4   | 12.7   | 3.0    |   36.1       |  19.3  |     2.80      |
-|   SIEUFERD      |  **96%** | 48.7   | 19.75  | 2.92   |   71.3       |  32.63 |     2.94      |
-|   PEPESEARCH    |    25%   | 10.3   |  5.3   | 5.3    | **21.0**     |**10.1**|     2.48      |
+|   RHIZOMER      |    58%   | 15.9   | 10.9   | 2.6    |   29.3       |  16.1  |    **2.2**    |
+|   VIRTUOSO FCT  |    54%   | 20.4   | 12.7   | 3.0    |   36.1       |  19.3  |      1.7      |
+|   SIEUFERD      |  **96%** | 48.7   | 19.75  | 2.92   |   71.3       |  32.63 |      1.8      |
+|   PEPESEARCH    |    25%   | 12.7   |  5.3   | 5.3    | **23.3**     |**10.5**|      1.4      |
 
 Table 2. Benchmark results for different End-User Structured Data User Interfaces. Showing the average for all completed benchmark tasks. Best results are in bold
 
