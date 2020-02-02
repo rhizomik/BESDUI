@@ -41,13 +41,13 @@ Structured Data User Interfaces. Available from: http://w3id.org/BESDUI
 
 Based on benchmark, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been proposed, one about effectiveness and two about efficiency:
 
-* **Capability** (effectiveness): what proportion of one task is completed (0% if not possible to complete or 100% otherwise) or, for the whole benchmark, the percentage of all 12 tasks completed.
-* **Operation Count** (efficiency): how many KLM Operators, from Table 1, are required to complete a task or the average count just for completed tasks.
-* **Time** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in Table 1. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together. For the whole benchmark, it is the average time considering just the completed tasks.
+* **Capability (C)** (effectiveness): what proportion of one task is completed (0% if not possible to complete or 100% otherwise) or, for the whole benchmark, the percentage of all 12 tasks completed.
+* **Operator Count (OC)** (efficiency): how many KLM Operators, from Table 1, are required to complete a task or the average count just for completed tasks.
+* **Time (T)** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in Table 1. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together. For the whole benchmark, it is the average time considering just the completed tasks.
 
 Additionally, there is a combined effectiveness/efficiency metric:
 
-* **Task Efficiency** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second". For the whole benchmark it is computed using the percentage of all 12 tasks completed divided by the average time for the completed tasks.
+* **Task Efficiency (TE)** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second". For the whole benchmark it is computed using the percentage of all 12 tasks completed divided by the average time for the completed tasks.
 
 | Keystroke-Level Model (KLM) Operator                                                                                                                        | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
