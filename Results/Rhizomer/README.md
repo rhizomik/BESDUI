@@ -119,10 +119,12 @@ Rhizomer does not currently provide a mechanism to filter literals by language.
 
 | Interaction Steps                                            |  K |  P |  H |
 |--------------------------------------------------------------|----|----|----|
-| 1. Click "Review5481" to expand info                         |  1 |  1 |    |
-| 2. Click "Reviewer268" to get details                        |  1 |  1 |    |
-| Total Operators                                              |  2 |  2 |    |
-| Time                                                         |     2.6      |
+| 1. Click "Person"                                            |  1 |  1 |    |
+| 2. Type "5481" in "Is Reviewer of Review" facet input        |  5 |  1 |  1 |
+| 3. Select autocompleted option "Review5481" pressing Enter   |  1 |    |    |
+| 4. Click displayed "Reviewer268" for details                 |  1 |  1 |  1 |
+| Total Operators                                              |  8 |  3 |  2 |
+| Time                                                         |     5.7      |
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](/Benchmark/11.md)
 > "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
