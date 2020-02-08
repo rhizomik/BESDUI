@@ -68,7 +68,7 @@ Currently, the BESDUI has been applied to the following tools:
 
 |Averages per Tool|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|  Time  |Task Efficiency|
 |-----------------|----------|--------|--------|--------|--------------|--------|---------------|
-|   RHIZOMER      |    58%   | 16.4   | 11.0   | 2.9    |   39.3       |  16.1  |    **2.2**    |
+|   RHIZOMER      |    58%   | 16.4   | 11.0   | 2.9    |   30.3       |  16.5  |    **2.1**    |
 |   VIRTUOSO FCT  |    46%   | 23.5   | 14.5   | 3.5    |   41.5       |  22.1  |      1.2      |
 |   SIEUFERD      |  **96%** | 48.7   | 19.8   | 2.9    |   71.3       |  32.63 |      1.8      |
 |   PEPESEARCH    |    25%   | 12.7   |  5.3   | 5.3    | **23.3**     |**10.5**|      1.4      |
