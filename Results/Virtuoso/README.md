@@ -15,11 +15,11 @@ This document reports the results for the BESDUI benchmark for the [Virtuoso FCT
 |  Task 7    |    0%    |        |        |        |              |     |
 |  Task 8    |  100%    |33      |21      |3       |57            |30.9 |
 |  Task 9    |    0%    |        |        |        |              |     |
-|  Task 10   |  100%    |2       |2       |0       |4             |2.6  |
+|  Task 10   |    0%    |        |        |        |              |     |
 |  Task 11   |  100%    |41      |26      |5       |72            |38.8 |
 |  Task 12   |   50%    |1       |1       |0       |2             |1.3  |
-|    SUM     |          |143     |89      |21      |253           |134.9|
-|  AVERAGE   |   54%    |20.4    |12.7    |3.0     |36.1          |19.3 |
+|    SUM     |          |141     |87      |21      |249           |132.3|
+|  AVERAGE   |   46%    |23.5    |14.5    |3.5     |41.5          |22.1 |
 
 ## Results per Task
 
@@ -120,12 +120,7 @@ Virtuoso FCT does not provide a mechanism to filter literals by language.
 **Task 10**. [Get information about a reviewer](/Benchmark/10.md)
 > "Get all available information about the author of **Review5481**".
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Click "Describe" for review                               |  1 |  1 |    |
-| 2. Click "reviewer" value "Stansie-Klenja"                   |  1 |  1 |    |
-| Total Operators                                              |  2 |  2 |    |
-| Time                                                         |     2.6      |
+Virtuoso FCT does not provide a mechanism to look for resources using a part of their URI. The review cannot be located by text and its URI is unknown for the user.
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](/Benchmark/11.md)
 > "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
