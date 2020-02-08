@@ -15,7 +15,7 @@ This document reports the results for the BESDUI benchmark for the [Rhizomer](ht
 |Task 7  |100%    |5       |1       |3       |9             |3.3  |
 |Task 8  |100%    |24      |13      |3       |40            |20.3 |
 |Task 9  |0%      |        |        |        |              |     |
-|Task 10 |100%    |2       |2       |        |4             |2.6  |
+|Task 10 |100%    |8       |3       |2       |13            |5.7  |
 |Task 11 |100%    |24      |14      |3       |41            |21.4 |
 |Task 12 |0%      |        |        |        |              |     |
 |SUM     |        |109     |76      |18      |203           |112.6|
