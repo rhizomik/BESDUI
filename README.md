@@ -8,8 +8,7 @@ Please, look at [CONTRIBUTING](CONTRIBUTING.md) and [LICENSE](LICENSE) to know h
 
 # Reference
 
-> Roberto García, Rosa Gil, Juan Manuel Gimeno, Eirik Bakke, David R. Karger. (2016). BESDUI: A Benchmark for End-User
-Structured Data User Interfaces. Available from: http://w3id.org/BESDUI
+> Roberto García, Rosa Gil, Eirik Bakke, David R. Karger. (2020). A benchmark for end-user structured data exploration and search user interfaces. Journal of Web Semantics, 65. https://doi.org/10.1016/j.websem.2020.100610
 
 ## Benchmark Tasks
 
