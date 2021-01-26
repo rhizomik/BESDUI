@@ -4,11 +4,9 @@ Benchmark for End-User Structured Data User Interfaces (BESDUI) based on the [Be
 
 This is a cheap User Interface benchmark as it does not involve users but experts, who measure how many interaction steps are required to complete each of the benchmark tasks, if possible. This also facilitates comparing different tools without the bias that different end-user profiles might introduce. The way to measure this interaction steps and convert them to an estimate of the required time to complete a task is based on the [Keystroke-Level Model (KLM)](https://en.wikipedia.org/wiki/Keystroke-level_model)
 
-Please, look at [CONTRIBUTING](CONTRIBUTING.md) and [LICENSE](LICENSE) to know how you can contribute to the benchmark by applying it to End-User Structured Data User Interfaces.
+Reference
 
-# Reference
-
-> Roberto García, Rosa Gil, Eirik Bakke, David R. Karger. (2020). A benchmark for end-user structured data exploration and search user interfaces. Journal of Web Semantics, 65. https://doi.org/10.1016/j.websem.2020.100610
+> García, Roberto; Gil, Rosa María; Bakke, Eirik; Karger, David R.. (2020) . A benchmark for end-user structured data exploration and search user interfaces. Journal of Web Semantics, 2020, vol. 65, p. 100610. doi: [10.1016/j.websem.2020.100610](https://doi.org/10.1016/j.websem.2020.100610). handle: [10459.1/69484](http://hdl.handle.net/10459.1/69484)
 
 ## Benchmark Tasks
 
@@ -73,6 +71,24 @@ Currently, the BESDUI has been applied to the following tools:
 |   PEPESEARCH    |    25%   | 12.7   |  5.3   | 5.3    | **23.3**     |**10.5**|      1.4      |
 
 Table 2. Benchmark results for different End-User Structured Data User Interfaces. Showing the average for all completed benchmark tasks. Best results are in bold
+
+## Contributing
+
+BESDUI is available under a Creative Commons Attribution-ShareAlike 4.0 International [LICENSE](LICENSE). To contribute to the Benchmark for End-User Structured Data User Interfaces (BESDUI), **FORK** the [BESDUI GitHub repository](https://github.com/rhizomik/BESDUI) and, when your evaluation is completed, perform a **PULL REQUEST** to propose your changes. Alternatively, you can download all the required data to prepare your contribution from http://hdl.handle.net/10459.1/69484
+
+The data to be loaded to perform the evaluation is available from the [Datasets](Datasets) folder. The [bsbm-1000products.ttl.tgz](Datasets/bsbm-1000products.ttl.tgz) file contains the RDF version of the test data.
+
+To apply the benchmark, **perform each one of the tasks** with the evaluated tool and check if the expected results are obtained. If they are not, or it is **not possible** to complete the task, then report a **0% for the Capability metric** for that task. **Otherwise**, the **Capability is 100%**. In this case, also report how many **KLM operators** are required to complete the task. The operators are the basic user interactions:
+
+* **K**: button press or keystroke, **keys** and not characters.
+* **P**: pointing to a target on a display with a **mouse**. Time differs depending on distance and size of the target, but KVM simplifies this and makes it constant.
+* **H**: homing the hand(s) on the keyboard or other device, this **includes** movement between any two devices.
+
+When all tasks have been checked, you can **compute the BESDUI metrics** using the [BESDUI Spreadsheet](Results/BESDUI.xls).
+
+To **contribute results**, please, use the [Evaluation Template](Results/EvaluationTemplate.md). Create a folder in [Results](Results) named after the evaluated tool and copy there the [EvaluationTemplate.md](Results/EvaluationTemplate.md). Then, rename it to **README.md** and fill it to report the results. You can also place in the same folder all other relevant files (images, spreadsheets,...). 
+
+Finally, commit all changes to your fork and perform a **PULL REQUEST** to get your results published. Alternatively, you can just send the file with your results to roberto.garcia@udl.cat 
 
 ## Acknowledgements
 
