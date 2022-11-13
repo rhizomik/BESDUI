@@ -68,8 +68,6 @@ This document reports the results for the BESDUI benchmark for the [RhizomerEye]
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
 
-This task is not currently possible using RhizomerEye because it does not provide a way to negate facet values.
-
 | Interaction Steps                                                  | K    | P   | H   |
 |--------------------------------------------------------------------|------|-----|-----|
 | 1. On the network overview, click on “sheeny” green bubble         | 1    | 1   | 1   |

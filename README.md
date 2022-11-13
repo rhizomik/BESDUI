@@ -58,7 +58,8 @@ Table 1. Interaction steps used to complete a benchmark task and their correspon
 
 Currently, the BESDUI has been applied to the following tools:
 
-* **[Rhizomer](/Results/Rhizomer)**: a semantic data exploration tool.
+* **[Rhizomer](/Results/Rhizomer)**: the old version of RhizomerEye, a semantic data exploration tool.
+* **[RhizomerEye](/Results/RhizomerEye)**: the current version of Rhizomer, a semantic data exploration tool.
 * **[Virtuoso FCT](/Results/Virtuoso)**: the faceted browser for the Virtuoso RDF data store.
 * **[Sieuferd](/Results/Sieuferd)**: a general-purpose user interface for relational databases.
 * **[PepeSearch](/Results/PepeSearch)**: a search interface for querying SPARQL endpoints.
@@ -95,4 +96,4 @@ Finally, commit all changes to your fork and perform a **PULL REQUEST** to get y
 
 This project has been partially supported by the research project InDAGuS, Infrastructures for Sustainable Open Government Data with Geospatial Features (Spanish Government TIN2012-37826-C02), together with the Universitat de Lleida and the Massachusetts Institute of Technology.
 
-<img src="http://www.eps.udl.cat/export/sites/Eps/UdL-EPS.jpg" height="60px" alt="Universitat de Lleida"/>&nbsp;&nbsp;&nbsp;<img src="https://cdn.www.getsmarter.com/uploads/partner/university_logo/15/mit-csail-logo-light-f40bf6d3c32d99046549389ec42ed1e4.jpg" height="60px" alt="Massachusetts Institute of Technology - Computer Science and Artificial Intelligence Laboratory"/>
+<img src="https://rhizomik.net/html/images/Logo_UdL.svg" height="60px" alt="Universitat de Lleida"/>&nbsp;&nbsp;&nbsp;<img src="https://hcie.csail.mit.edu/fabpub/logo/csail.svg" height="60px" alt="Massachusetts Institute of Technology - Computer Science and Artificial Intelligence Laboratory"/>
