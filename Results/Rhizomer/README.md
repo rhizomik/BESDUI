@@ -1,25 +1,25 @@
 # BESDUI Results for Rhizomer
 
-This document reports the results for the BESDUI benchmark for the [Rhizomer](http://rhizomik.net/rhizomer/) tool, a semantic data exploration and visualization tool. Rhizomer automatically generates, after analyzing the semantic dataset, some user interface components to explore it. First, they facilitate gaining an overview of the dataset structure, concretely menus, TreeMaps, site maps and site indexes. Then, zooming and filtering into details through facets and the ability to pivot among sets of interrelated resources.
+This document reports the results for the BESDUI benchmark for the [Rhizomer](https://github.com/rhizomik/rhizomer) tool, a semantic data exploration and visualization tool. Rhizomer automatically generates, after analyzing the semantic dataset, some user interface components to explore it. First, they facilitate gaining an overview of the dataset structure, concretely menus, TreeMaps, site maps and site indexes. Then, zooming and filtering into details through facets and the ability to pivot among sets of interrelated resources.
 
 ## Summary
 
-|RHIZOMER|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count|Time|Task Efficiency
-|--------|--------|--------|--------|--------|--------------|-----|-----|
-|Task 1  |0%      |        |        |        |              |     |     |
-|Task 2  |100%    |10      |8       |3       |21            |12.0 | 5.0 |
-|Task 3  |100%    |8       |2       |3       |13            |5.0  |13.0 |
-|Task 4  |0%      |        |        |        |              |     |     |
-|Task 5  |0%      |        |        |        |              |     |     |
-|Task 6  |100%    |38      |36      |3       |77            |48.4 | 1.2 |
-|Task 7  |100%    |5       |1       |3       |9             |3.3  |18.2 |
-|Task 8  |100%    |24      |13      |3       |40            |20.3 | 3.0 |
-|Task 9  |0%      |        |        |        |              |     |     |
-|Task 10 |100%    |8       |3       |2       |13            |5.7  |10.5 |
-|Task 11 |100%    |24      |14      |3       |41            |21.4 | 2.8 |
-|Task 12 |0%      |        |        |        |              |     |     |
-|SUM     |        |115     |77      |20      |212           |115.7|53.8 |
-|AVERAGE |58%     |16.4    |11.0    |2.9     |30.3          |16.5 | 2.1 |
+| RHIZOMER | Capability | K (0.2s) | P (1.1s) | H (0.4s) | Operator Count | Time  | Task Efficiency |
+|----------|------------|----------|----------|----------|----------------|-------|-----------------|
+| Task 1   | 0%         |          |          |          |                |       |                 |
+| Task 2   | 100%       | 10       | 8        | 3        | 21             | 12.0  | 5.0             |
+| Task 3   | 100%       | 8        | 2        | 3        | 13             | 5.0   | 13.0            |
+| Task 4   | 0%         |          |          |          |                |       |                 |
+| Task 5   | 0%         |          |          |          |                |       |                 |
+| Task 6   | 100%       | 38       | 36       | 3        | 77             | 48.4  | 1.2             |
+| Task 7   | 100%       | 5        | 1        | 3        | 9              | 3.3   | 18.2            |
+| Task 8   | 100%       | 24       | 13       | 3        | 40             | 20.3  | 3.0             |
+| Task 9   | 0%         |          |          |          |                |       |                 |
+| Task 10  | 100%       | 8        | 3        | 2        | 13             | 5.7   | 10.5            |
+| Task 11  | 100%       | 24       | 14       | 3        | 41             | 21.4  | 2.8             |
+| Task 12  | 0%         |          |          |          |                |       |                 |
+| SUM      |            | 115      | 77       | 20       | 212            | 115.7 | 53.8            |
+| AVERAGE  | 58%        | 16.4     | 11.0     | 2.9      | 30.3           | 16.5  | 2.1             |
 
 ## Results per Task
 
