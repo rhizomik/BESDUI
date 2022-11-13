@@ -6,7 +6,7 @@ This is a cheap User Interface benchmark as it does not involve users but expert
 
 Reference
 
-> García, Roberto; Gil, Rosa María; Bakke, Eirik; Karger, David R.. (2020) . A benchmark for end-user structured data exploration and search user interfaces. Journal of Web Semantics, 2020, vol. 65, p. 100610. doi: [10.1016/j.websem.2020.100610](https://doi.org/10.1016/j.websem.2020.100610). handle: [10459.1/69484](http://hdl.handle.net/10459.1/69484)
+> García, Roberto; Gil, Rosa María; Bakke, Eirik; Karger, David R. (2020). A benchmark for end-user structured data exploration and search user interfaces. Journal of Web Semantics, 2020, vol. 65, p. 100610. DOI: [10.1016/j.websem.2020.100610](https://doi.org/10.1016/j.websem.2020.100610). Preprint: [10459.1/69484](http://hdl.handle.net/10459.1/69484)
 
 ## Benchmark Tasks
 
