@@ -11,15 +11,15 @@ This document reports the results for the BESDUI benchmark for the [RhizomerEye]
 | Task 3      | 100%       | 10       | 3        | 3        | 16             | 6.5  | 9.2             |
 | Task 4      | 100%       | 13       | 12       | 3        | 28             | 17   | 3.5             |
 | Task 5      |            |          |          |          |                |      |                 |
-| Task 6      | 100%       | 24       | 21       | 3        | 48             | 29.1 | 2.1             |
+| Task 6      | 100%       | 25       | 22       | 3        | 50             | 30.4 | 2.0             |
 | Task 7      | 100%       | 7        | 3        | 2        | 12             | 5.5  | 10.9            |
 | Task 8      |            |          |          |          |                |      |                 |
 | Task 9      |            |          |          |          |                |      |                 |
 | Task 10     | 100%       | 15       | 4        | 2        | 21             | 8.2  | 7.3             |
 | Task 11     |            |          |          |          |                |      |                 |
 | Task 12     |            |          |          |          |                |      |                 |
-| SUM         | 700%       | 90       | 60       | 19       | 169            | 91.6 | 42.6            |
-| AVERAGE     | 58%        | 12.9     | 8.6      | 2.7      | 24.1           | 13.1 | 2.7             |
+| SUM         | 700%       | 91       | 61       | 19       | 171            | 92.9 | 42.6            |
+| AVERAGE     | 58%        | 13.0     | 8.7      | 2.7      | 24.4           | 13.3 | 2.6             |
 
 ## Results per Task
 
@@ -78,8 +78,8 @@ This document reports the results for the BESDUI benchmark for the [RhizomerEye]
 | 6. Click selected value “gadgeteers” marked in yellow to negate it | 1    | 1   |     |
 | 7. Expand facet "productPropertyNumeric1" clicking "+"             | 1    | 1   |     |
 | 8. Set facet's slider left end to aprox. "300"                     | 1    | 2   |     |
-| 7. Expand facet "productPropertyNumeric3" clicking "+"             | 1    | 1   |     |
-| 8. Set facet's slider right end to aprox. "400"                    | 1    | 2   |     |
+| 9. Expand facet "productPropertyNumeric3" clicking "+"             | 1    | 1   |     |
+| 10. Set facet's slider right end to aprox. "400"                   | 1    | 2   |     |
 | Total KLM Operations                                               | 13   | 12  | 3   |
 | Time                                                               | 13.3 |
 
@@ -99,15 +99,15 @@ The user can look for a specific product. As a result, the corresponding faceted
 | 2. Expand facet "label" by clicking "+"                                        | 1    | 1   |     |
 | 3. Type "booz" in facets's "Search facets value" input and RETURN key          | 6    | 1   | 1   |
 | 4. Expand facet "productFeature" by clicking "+"                               | 1    | 1   | 1   |
-| 5. Select all 10 values for "productFeature" facet                             | 10   | 10  |     |
+| 5. Select all 11 values for "productFeature" facet                             | 11   | 11  |     |
 | 6. Expand facets "productPropertyNumeric1" and "productPropertyNumeric2"       | 1    | 1   |     |
 | 7. Notice that values for "boozed" are "527" and "745"                         |      |     |     |
 | 8. Click value "boozed" in facet "label" to negate it                          | 1    | 1   |     |
 | 9. Swith operator mode for facet "productFeature" from AND to OR               | 1    | 1   |     |
 | 10. Set facet "productPropertyNumeric1" slider to range aprox. "427" and "627" | 1    | 2   |     |
 | 10. Set facet "productPropertyNumeric2" slider to range aprox. "545" and "945" | 1    | 2   |     |
-| Total KLM Operations                                                           | 24   | 21  | 3   |
-| Time                                                                           | 29.1 |
+| Total KLM Operations                                                           | 25   | 22  | 3   |
+| Time                                                                           | 30.4 |
 
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
