@@ -4,22 +4,22 @@ This document reports the results for the BESDUI benchmark for the [PepeSearch](
 
 ## Summary
 
-|PEPESEARCH|Capability|K (0.2s)|P (1.1s)|H (0.4s)|Operator Count| Time |
-|----------|--------|--------|--------|--------|--------------|------|
-|  Task 1  |   0%   |        |        |        |              |  0.0 |
-|  Task 2  |   0%   |        |        |        |              |  0.0 |
-|  Task 3  |  100%  |    7   |    3   |    3   |      13      |  5.9 |
-|  Task 4  |   0%   |        |        |        |              |  0.0 |
-|  Task 5  |   0%   |        |        |        |              |  0.0 |
-|  Task 6  |  100%  |   24   |   11   |   11   |      46      | 21.3 |
-|  Task 7  |  100%  |    7   |    2   |    2   |      11      |  4.4 |
-|  Task 8  |   0%   |        |        |        |              |  0.0 |
-|  Task 9  |   0%   |        |        |        |              |  0.0 |
-|  Task 10 |   0%   |        |        |        |              |  0.0 |
-|  Task 11 |   0%   |        |        |        |              |  0.0 |
-|  Task 12 |   0%   |        |        |        |              |  0.0 |
-|  SUM     |        |   38   |    16  |   16   |      70      | 31.6 |
-|  AVERAGE |  25%   |   12.7 |   5.3  |  5.3   |    23.3      | 10.5 |
+| PEPESEARCH | Capability | K (0.2s) | P (1.1s) | H (0.4s) | Operator Count | Time | Task Efficiency |
+|------------|------------|----------|----------|----------|----------------|------|-----------------|
+| Task 1     | 0%         |          |          |          |                |      |                 |
+| Task 2     | 0%         |          |          |          |                |      |                 |
+| Task 3     | 100%       | 7        | 3        | 2        | 12             | 5.5  | 10.9            |
+| Task 4     | 0%         |          |          |          |                |      |                 |
+| Task 5     | 0%         |          |          |          |                |      |                 |
+| Task 6     | 0%         |          |          |          |                |      |                 |
+| Task 7     | 100%       | 7        | 2        | 1        | 10             | 4    | 15.0            |
+| Task 8     | 0%         |          |          |          |                |      |                 |
+| Task 9     | 0%         |          |          |          |                |      |                 |
+| Task 10    | 0%         |          |          |          |                |      |                 |
+| Task 11    | 0%         |          |          |          |                |      |                 |
+| Task 12    | 0%         |          |          |          |                |      |                 |
+| SUM        | 200%       | 14       | 5        | 3        | 22             | 9.5  | 25.9            |
+| AVERAGE    | 17%        | 7        | 2.5      | 1.5      | 11             | 4.8  | 2.1             |
 
 ## Results per Task
 
@@ -39,14 +39,14 @@ This task cannot be performed because PepeSearch does not allow to set several v
 > "Get details about product **boozed**".
 
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Select "Product" in the list of concepts                  |  1 |  1 |  1 |
-| 2. Click on the product label field and type "bo"            |  3 |  1 |  1 |
-| 3. Select "boozed" from autocomplete                         |  2 |    |    |
-| 4. Click on the product link "boozed"                        |  1 |  1 |  1 |
-| Total Operators                                              |  7 |  3 |  3 |
-| Time                                                         |      5.9     |
+| Interaction Steps                                 | K   | P   | H   |
+|---------------------------------------------------|-----|-----|-----|
+| 1. Select "Product" in the list of concepts       | 1   | 1   |     |
+| 2. Click on the product label field and type "bo" | 3   | 1   | 1   |
+| 3. Select "boozed" from autocomplete              | 2   |     |     |
+| 4. Click on the product link "boozed"             | 1   | 1   | 1   |
+| Total Operators                                   | 7   | 3   | 2   |
+| Time                                              | 5.5 |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -63,29 +63,19 @@ This task cannot be performed because PepeSearch does not allow to set several v
 **Task 6**. [Find products that are similar to a given product](/Benchmark/6.md)
 > "Look for products similar to **boozed**, with at least one shared feature, and a **productPropertyNumeric1** value between **427 and 627** (100 more or less than its value for boozed, 527) and a **productPropertyNumeric2** value between **545 and 945** (200 more or less than its value for boozed, 745)".
 
-The user begins by searching the product "boozed"", as in Task 3. Then, he creates a new search for a product with product feature "stroboscopes" and the ranges specified in the description.
+This task cannot be performed because PepeSearch does not allow to set several values for a property.
 
-| Interaction Steps                                                 |  K |  P |  H |
-|-------------------------------------------------------------------|----|----|----|
-| 1. Get information about product "boozed" (as in Task 4)          |  7 |  3 |  3 |
-| 2. Go home and select "Product" in the list of concepts           |    |  2 |    |
-| 3. Expand the collapsible "ProductFeature", click on the label field, type "st" and select "stroboscopes" from autocomplete|  4 |  2 |  1 |
-| 4. Set the range of "productPropertyNumeric1" between 427 and 627 |  6 |  2 |  3 |
-| 5. Set the range of "productPropertyNumeric2" between 545 and 945 |  6 |  2 |  3 |
-| 6. Press enter to get the results                                 |  1 |    |  1 |
-| Total Operators                                                   | 24 | 11 | 11 |
-| Time                                                              |     21.3     |
 
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
 
-| Interaction Steps                                                 |  K |  P |  H |
-|-------------------------------------------------------------------|----|----|----|
-| 1. Select "Product" in the list of concepts                       |  1 |  1 |  1 |
-| 2. Click on the product label field and type "ales"               |  5 |  1 |  1 |
-| 3. Press enter to get results                                     |  1 |    |    |
-| Total Operators                                                   |  7 |  2 |  2 |
-| Time                                                              |      4.4     |
+| Interaction Steps                                   | K   | P   | H   |
+|-----------------------------------------------------|-----|-----|-----|
+| 1. Select "Product" in the list of concepts         | 1   | 1   |     |
+| 2. Click on the product label field and type "ales" | 5   | 1   | 1   |
+| 3. Press enter to get results                       | 1   |     |     |
+| Total Operators                                     | 7   | 2   | 1   |
+| Time                                                | 4   |
 
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](/Benchmark/8.md)
 > "For the product **waterskiing sharpness horseshoes** list details for all its **offers** by Chinese vendors and still valid by **2008-05-28** plus details for all **reviews** for this product having either **rating1 or rating2**".

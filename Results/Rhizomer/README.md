@@ -7,19 +7,19 @@ This document reports the results for the BESDUI benchmark for the [Rhizomer](ht
 | RHIZOMER | Capability | K (0.2s) | P (1.1s) | H (0.4s) | Operator Count | Time  | Task Efficiency |
 |----------|------------|----------|----------|----------|----------------|-------|-----------------|
 | Task 1   | 0%         |          |          |          |                |       |                 |
-| Task 2   | 100%       | 10       | 8        | 3        | 21             | 12.0  | 5.0             |
-| Task 3   | 100%       | 8        | 2        | 3        | 13             | 5.0   | 13.0            |
+| Task 2   | 100%       | 10       | 8        | 2        | 20             | 11.6  | 5.2             |
+| Task 3   | 100%       | 6        | 2        | 2        | 10             | 4.2   | 14.3            |
 | Task 4   | 0%         |          |          |          |                |       |                 |
 | Task 5   | 0%         |          |          |          |                |       |                 |
-| Task 6   | 100%       | 38       | 36       | 3        | 77             | 48.4  | 1.2             |
-| Task 7   | 100%       | 5        | 1        | 3        | 9              | 3.3   | 18.2            |
-| Task 8   | 100%       | 24       | 13       | 3        | 40             | 20.3  | 3.0             |
+| Task 6   | 100%       | 38       | 36       | 2        | 76             | 48    | 1.3             |
+| Task 7   | 100%       | 5        | 1        | 2        | 8              | 2.9   | 20.7            |
+| Task 8   | 100%       | 24       | 13       | 2        | 39             | 19.9  | 3.0             |
 | Task 9   | 0%         |          |          |          |                |       |                 |
 | Task 10  | 100%       | 8        | 3        | 2        | 13             | 5.7   | 10.5            |
-| Task 11  | 100%       | 24       | 14       | 3        | 41             | 21.4  | 2.8             |
+| Task 11  | 100%       | 24       | 14       | 2        | 40             | 21    | 2.9             |
 | Task 12  | 0%         |          |          |          |                |       |                 |
-| SUM      |            | 115      | 77       | 20       | 212            | 115.7 | 53.8            |
-| AVERAGE  | 58%        | 16.4     | 11.0     | 2.9      | 30.3           | 16.5  | 2.1             |
+| SUM      |            | 115      | 77       | 14       | 206            | 113.3 | 57.8            |
+| AVERAGE  | 58%        | 16.4     | 11.0     | 2        | 29.4           | 16.2  | 2.2             |
 
 ## Results per Task
 
@@ -31,27 +31,28 @@ This task cannot be performed because Rhizomer does not provide a way to define 
 **Task 2**. [Find products for a given set of alternative features](/Benchmark/2.md)
 > "List products of type **sheeny** with product features **stroboscopes** OR **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Click menu “ProductType” and then “Sheeny” submenu        |  2 |  2 |  1 |
-| 2. Click “Show values” for facet “Product Feature”           |  1 |  1 |    |
-| 3. Click facet value “stroboscopes”                          |  1 |  1 |    |
-| 4. Type in input “Search Product Feature” “gad...”           |  4 |  1 |  1 |
-| 5. Select “gadgeteers” from autocomplete                     |  1 |  1 |  1 |
-| 6. Set left side of property "Numeric1" slider to "450"      |  1 |  2 |    |
-| Total KLM Operations                                         | 10 |  8 |  3 |
-| Time                                                         |      12      |
+| Interaction Steps                                            | K    | P   | H   |
+|--------------------------------------------------------------|------|-----|-----|
+| 1. Click menu “ProductType” and then “Sheeny” submenu        | 2    | 2   |     |
+| 2. Click “Show values” for facet “Product Feature”           | 1    | 1   |     |
+| 3. Click facet value “stroboscopes”                          | 1    | 1   |     |
+| 4. Type in input “Search Product Feature” “gad...”           | 4    | 1   | 1   |
+| 5. Select “gadgeteers” from autocomplete                     | 1    | 1   | 1   |
+| 6. Set left side of property "Numeric1" slider to "450"      | 1    | 2   |     |
+| Total KLM Operations                                         | 10   | 8   | 2   |
+| Time                                                         | 11.6 |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](/Benchmark/3.md)
 > "Get details about product **boozed**".
 
 From the entry page, type the product name in the "Quick search..." input box and select the requested product name.
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Click in search form and type "booz"                      |  5 |  1 |  2 |
-| 2. Click "boozed" in autocomplete                            |  1 |  1 |  1 |
-| Time                                                         |      4.6     |
+| Interaction Steps                                            | K   | P   | H   |
+|--------------------------------------------------------------|-----|-----|-----|
+| 1. Click in search form and type "booz"                      | 5   | 1   | 1   |
+| 2. Click "boozed" in autocomplete                            | 1   | 1   | 1   |
+| Total KLM Operations                                         | 6   | 2   | 2   |
+| Time                                                         | 10  |
 
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
@@ -68,25 +69,25 @@ It cannot be performed using Rhizomer because it currently does not support AND 
 
 The user can look for a specific product. As a result, the corresponding faceted view for it is generated and a query where the restriction is that the product is the one selected. The faceted view can be then used to select all the product features of the selected product. The user can also see the values for the numeric properties and manually set the ranges in the corresponding facet sliders. Finally, the user can remove the restriction for the specific product while keeping the rest of restrictions to retrieve similar products.
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Point search form, type "boozed" and click in autocomplete|  8 |  2 |  3 |
-| 2. 5 Clicks to expand all Product Feature values             |  5 |  5 |    |
-| 3. 20 Clicks to select all features for the current product  | 20 | 20 |    |
-| 4. Click to remove restriction for current product           |  1 |  1 |    |
-| 5. Set sliders for numeric properties 1 and 2 ranges         |  4 |  8 |    |
-| Total Operators                                              | 38 | 36 |  3 |
-| Time                                                         |    12.0      |
+| Interaction Steps                                             | K   | P   | H   |
+|---------------------------------------------------------------|-----|-----|-----|
+| 1. Point search form, type "boozed" and click in autocomplete | 8   | 2   | 2   |
+| 2. 5 Clicks to expand all Product Feature values              | 5   | 5   |     |
+| 3. 20 Clicks to select all features for the current product   | 20  | 20  |     |
+| 4. Click to remove restriction for current product            | 1   | 1   |     |
+| 5. Set sliders for numeric properties 1 and 2 ranges          | 4   | 8   |     |
+| Total Operators                                               | 38  | 36  | 2   |
+| Time                                                          | 48  |
 
 **Task 7**. [Find products having a name that contains some text](/Benchmark/7.md)
 > "Search products whose name contains **ales**".
 
 The user can directly use the “Quick search...” input box at the top, type “ales” and a list of entities whose label contains “ales” is shown, from where the user can select the one he is interested in.
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Type "ales" in search form, results in autocomplete       |  5 |  1 |  3 |
-| Time                                                         |     3.3      |
+| Interaction Steps                                      | K   | P   | H   |
+|--------------------------------------------------------|-----|-----|-----|
+| 1. Type "ales" in search form, results in autocomplete | 5   | 1   | 2   |
+| Time                                                   | 2.9 |
 
 Alternative: click “Product” in the menu and then use the “label” facet to search for label values containing water.
 
@@ -95,19 +96,19 @@ Alternative: not supported yet, “Quick search...” in addition to autocomplet
 **Task 8**. [Retrieve in-depth information about a specific product including offers and reviews](/Benchmark/8.md)
 > "For the product **waterskiing sharpness horseshoes** list details for all its **offers** by Chinese vendors and still valid by **2008-05-28** plus details for all **reviews** for this product having either **rating1 or rating2**".
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Type "waterskiing" in search form and click autocomplete  | 13 |  2 |  3 |
-| 2. Click “See related Offers” in the product description     |  1 |  1 |    |
-| 3. In the “Vendor” facet click “Filter Vendor”               |  1 |  1 |    |
-| 4. Click “Show values” for “Country” and check “CN”          |  2 |  2 |    |
-| 5. Go back to offers by clicking “Offer” in breadcrumbs      |  1 |  1 |    |
-| 6. Click “Show values” in “Valid to” facet                   |  1 |  1 |    |
-| 7. Check 3 dates after “2008-05-28”                          |  3 |  3 |    |
-| 8. Pivot to related products using "Filter Product"          |  1 |  1 |    |
-| 9. Pivot to related reviews using "Filter Review"            |  1 |  1 |    |
-| Total Operators                                              | 24 | 13 |  3 |
-| Time                                                         |     20.3     |
+| Interaction Steps                                           | K    | P   | H   |
+|-------------------------------------------------------------|------|-----|-----|
+| 1. Type "waterskiing" in search form and click autocomplete | 13   | 2   | 2   |
+| 2. Click “See related Offers” in the product description    | 1    | 1   |     |
+| 3. In the “Vendor” facet click “Filter Vendor”              | 1    | 1   |     |
+| 4. Click “Show values” for “Country” and check “CN”         | 2    | 2   |     |
+| 5. Go back to offers by clicking “Offer” in breadcrumbs     | 1    | 1   |     |
+| 6. Click “Show values” in “Valid to” facet                  | 1    | 1   |     |
+| 7. Check 3 dates after “2008-05-28”                         | 3    | 3   |     |
+| 8. Pivot to related products using "Filter Product"         | 1    | 1   |     |
+| 9. Pivot to related reviews using "Filter Review"           | 1    | 1   |     |
+| Total Operators                                             | 24   | 13  | 2   |
+| Time                                                        | 19.9 |
 
 **Task 9**. [Give me recent reviews in English for a specific product](/Benchmark/9.md)
 > "For the product **waterskiing sharpness horseshoes** list the **20** more recent **reviews** in **English**".
@@ -117,30 +118,30 @@ Rhizomer does not currently provide a mechanism to filter literals by language.
 **Task 10**. [Get information about a reviewer](/Benchmark/10.md)
 > "Get all available information about the author of **Review5481**".
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Click "Person"                                            |  1 |  1 |    |
-| 2. Type "5481" in "Is Reviewer of Review" facet input        |  5 |  1 |  1 |
-| 3. Select autocompleted option "Review5481" pressing Enter   |  1 |    |    |
-| 4. Click displayed "Reviewer268" for details                 |  1 |  1 |  1 |
-| Total Operators                                              |  8 |  3 |  2 |
-| Time                                                         |     5.7      |
+| Interaction Steps                                          | K   | P   | H   |
+|------------------------------------------------------------|-----|-----|-----|
+| 1. Click "Person"                                          | 1   | 1   |     |
+| 2. Type "5481" in "Is Reviewer of Review" facet input      | 5   | 1   | 1   |
+| 3. Select autocompleted option "Review5481" pressing Enter | 1   |     |     |
+| 4. Click displayed "Reviewer268" for details               | 1   | 1   | 1   |
+| Total Operators                                            | 8   | 3   | 2   |
+| Time                                                       | 5.7 |
 
 **Task 11**. [Get offers for a given product which fulfill specific requirements](/Benchmark/11.md)
 > "Look for the **cheapest** and still **valid** by **2008-06-15** **offer** for the product **waterskiing sharpness horseshoes** by a **US vendor** that is able to **deliver** within **3 days**".
 
-| Interaction Steps                                            |  K |  P |  H |
-|--------------------------------------------------------------|----|----|----|
-| 1. Type "waterskiing" in search form and click autocomplete  | 13 |  2 |  3 |
-| 2. Click “See related Offers” in the product description     |  1 |  1 |    |
-| 3. In the “Vendor” facet click “Filter Vendor”               |  1 |  1 |    |
-| 4. Click “Show values” for “Country” and check “US”          |  2 |  2 |    |
-| 5. Go back to offers by clicking “Offer” in breadcrumbs      |  1 |  1 |    |
-| 7. Click "Valid to" values and 3 dates after “2008-06-15”    |  3 |  3 |    |
-| 6. Slide “Delivery days” to 3 or less days                   |  1 |  2 |    |
-| 8. Select "price" in "Sort by" selector                      |  2 |  2 |    |
-| Total Operators                                              | 24 | 14 |  3 |
-| Time                                                         |     21.4     |
+| Interaction Steps                                           | K   | P   | H   |
+|-------------------------------------------------------------|-----|-----|-----|
+| 1. Type "waterskiing" in search form and click autocomplete | 13  | 2   | 2   |
+| 2. Click “See related Offers” in the product description    | 1   | 1   |     |
+| 3. In the “Vendor” facet click “Filter Vendor”              | 1   | 1   |     |
+| 4. Click “Show values” for “Country” and check “US”         | 2   | 2   |     |
+| 5. Go back to offers by clicking “Offer” in breadcrumbs     | 1   | 1   |     |
+| 7. Click "Valid to" values and 3 dates after “2008-06-15”   | 3   | 3   |     |
+| 6. Slide “Delivery days” to 3 or less days                  | 1   | 2   |     |
+| 8. Select "price" in "Sort by" selector                     | 2   | 2   |     |
+| Total Operators                                             | 24  | 14  | 2   |
+| Time                                                        | 21  |
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](/Benchmark/12.md)
 > "Save in the local computer the information about the vendor for **Offer3499**, this is **half** the task. To **complete** it, restrict the output to just label, homepage and country and **map** them to schema.org terms name, url and nationality".
