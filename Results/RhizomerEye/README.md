@@ -7,9 +7,9 @@ This document reports the results for the BESDUI benchmark for the [RhizomerEye]
 | RhizomerEye | Capability | K (0.2s) | P (1.1s) | H (0.4s) | Operator Count | Time | Task Efficiency |
 |-------------|------------|----------|----------|----------|----------------|------|-----------------|
 | Task 1      | 100%       | 10       | 7        | 2        | 19             | 10.5 | 5.7             |
-| Task 2      | 100%       | 11       | 9        | 2        | 22             | 12.9 | 4.7             |
+| Task 2      | 100%       | 11       | 8        | 2        | 21             | 11.8 | 5.1             |
 | Task 3      | 100%       | 10       | 3        | 2        | 15             | 6.1  | 9.8             |
-| Task 4      | 100%       | 13       | 12       | 2        | 27             | 16.6 | 3.6             |
+| Task 4      | 100%       | 13       | 11       | 2        | 26             | 15.5 | 3.9             |
 | Task 5      |            |          |          |          |                |      |                 |
 | Task 6      | 100%       | 25       | 22       | 2        | 49             | 30   | 2.0             |
 | Task 7      | 100%       | 7        | 3        | 1        | 11             | 5.1  | 11.8            |
@@ -18,8 +18,8 @@ This document reports the results for the BESDUI benchmark for the [RhizomerEye]
 | Task 10     | 100%       | 15       | 4        | 1        | 20             | 7.8  | 7.7             |
 | Task 11     |            |          |          |          |                |      |                 |
 | Task 12     |            |          |          |          |                |      |                 |
-| SUM         | 700%       | 91       | 60       | 12       | 163            | 89   | 45.3            |
-| AVERAGE     | 58%        | 13.0     | 8.6      | 1.7      | 23.3           | 12.7 | 2.8             |
+| SUM         | 700%       | 91       | 58       | 12       | 161            | 86.8 | 46.0            |
+| AVERAGE     | 58%        | 13.0     | 8.3      | 1.7      | 23.0           | 12.4 | 2.8             |
 
 ## Results per Task
 
@@ -40,18 +40,17 @@ This document reports the results for the BESDUI benchmark for the [RhizomerEye]
 **Task 2**. [Find products for a given set of alternative features](/Benchmark/2.md)
 > "List products of type **sheeny** with product features **stroboscopes** OR **gadgeteers**, and a **productPropertyNumeric1** greater than **450**".
 
-| Interaction Steps                                          | K    | P   | H   |
-|------------------------------------------------------------|------|-----|-----|
-| 1. On the network overview, click on “sheeny” green bubble | 1    | 1   |     |
-| 2. Click "+" for facet “productFeature”                    | 1    | 1   |     |
-| 3. Click facet value “stroboscopes”                        | 1    | 1   |     |
-| 4. Type in input “Search facet values” “gad...”            | 4    | 1   | 1   |
-| 5. Select “gadgeteers” from autocomplete                   | 1    | 1   | 1   |
-| 6. Switch facet operator from AND to OR mode               | 1    | 1   |     |
-| 7. Expand facet "productPropertyNumeric1" clicking "+"     | 1    | 1   |     |
-| 8. Set facet's slider left end to aprox. "450"             | 1    | 2   |     |
-| Total KLM Operations                                       | 11   | 9   | 2   |
-| Time                                                       | 12.9 |
+| Interaction Steps                                                   | K    | P   | H   |
+|---------------------------------------------------------------------|------|-----|-----|
+| 1. On the network overview, click on “sheeny” green bubble          | 1    | 1   |     |
+| 2. Click "+" for facet “productFeature”                             | 1    | 1   |     |
+| 3. Click facet value “stroboscopes”                                 | 1    | 1   |     |
+| 4. Type in input “Search facet values” “gad...” and then RETURN key | 5    | 1   | 1   |
+| 5. Switch facet operator from AND to OR mode                        | 1    | 1   | 1   |
+| 6. Expand facet "productPropertyNumeric1" clicking "+"              | 1    | 1   |     |
+| 7. Set facet's slider left end to aprox. "450"                      | 1    | 2   |     |
+| Total KLM Operations                                                | 11   | 8   | 2   |
+| Time                                                                | 11.8 |
 
 **Task 3**. [Retrieve basic information about a specific product for display purposes](/Benchmark/3.md)
 > "Get details about product **boozed**".
@@ -67,20 +66,19 @@ This document reports the results for the BESDUI benchmark for the [RhizomerEye]
 **Task 4**. [Find products having some specific features and not having one feature](/Benchmark/4.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** but **NOT gadgeteers**, and **productPropertyNumeric1** value greater than **300** and **productPropertyNumeric3** smaller than **400**".
 
-| Interaction Steps                                                  | K    | P   | H   |
-|--------------------------------------------------------------------|------|-----|-----|
-| 1. On the network overview, click on “sheeny” green bubble         | 1    | 1   |     |
-| 2. Click "+" for facet “productFeature”                            | 1    | 1   |     |
-| 3. Click facet value “stroboscopes”                                | 1    | 1   |     |
-| 4. Type in input “Search facet values” “gad...”                    | 4    | 1   | 1   |
-| 5. Select “gadgeteers” from autocomplete                           | 1    | 1   | 1   |
-| 6. Click selected value “gadgeteers” marked in yellow to negate it | 1    | 1   |     |
-| 7. Expand facet "productPropertyNumeric1" clicking "+"             | 1    | 1   |     |
-| 8. Set facet's slider left end to aprox. "300"                     | 1    | 2   |     |
-| 9. Expand facet "productPropertyNumeric3" clicking "+"             | 1    | 1   |     |
-| 10. Set facet's slider right end to aprox. "400"                   | 1    | 2   |     |
-| Total KLM Operations                                               | 13   | 12  | 2   |
-| Time                                                               | 16.6 |
+| Interaction Steps                                                   | K    | P   | H   |
+|---------------------------------------------------------------------|------|-----|-----|
+| 1. On the network overview, click on “sheeny” green bubble          | 1    | 1   |     |
+| 2. Click "+" for facet “productFeature”                             | 1    | 1   |     |
+| 3. Click facet value “stroboscopes”                                 | 1    | 1   |     |
+| 4. Type in input “Search facet values” “gad...” and then RETURN key | 5    | 1   | 1   |
+| 5. Click selected value “gadgeteers” marked in yellow to negate it  | 1    | 1   | 1   |
+| 6. Expand facet "productPropertyNumeric1" clicking "+"              | 1    | 1   |     |
+| 7. Set facet's slider left end to aprox. "300"                      | 1    | 2   |     |
+| 8. Expand facet "productPropertyNumeric3" clicking "+"              | 1    | 1   |     |
+| 9. Set facet's slider right end to aprox. "400"                     | 1    | 2   |     |
+| Total KLM Operations                                                | 13   | 11  | 2   |
+| Time                                                                | 15.5 |
 
 **Task 5**. [Find products matching two different sets of features](/Benchmark/5.md)
 > "Look for products of type **sheeny** with product features **stroboscopes** and **gadgeteers** and a **productPropertyNumeric1** value greater than **300** plus those of the same product type with product features **stroboscopes** and **rotifers** and a **productPropertyNumeric2** greater than **400**".
