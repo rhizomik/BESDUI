@@ -44,7 +44,7 @@ Based on benchmark, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8
 
 Additionally, there is a combined effectiveness/efficiency metric:
 
-* **Task Efficiency (TE)** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per second". For the whole benchmark it is computed using the percentage of all 12 tasks completed divided by the average time for the completed tasks.
+* **Task Efficiency (TE)** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per minute". For the whole benchmark it is computed using the percentage of all 12 tasks completed divided by the average time for the completed tasks, then multiplied by 60 to compute the goals per minute.
 
 | Keystroke-Level Model (KLM) Operator                                                                                                | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
