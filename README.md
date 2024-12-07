@@ -1,8 +1,8 @@
 # BESDUI
 
-Benchmark for End-User Structured Data User Interfaces (BESDUI) based on the [Berlin SPARQL Benchmark (BSBM)](http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine. BSBM is just used to provide the data to be explored.
+The Benchmark for End-User Structured Data User Interfaces (BESDUI) is based on the [Berlin SPARQL Benchmark (BSBM)](http://wbsg.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/) but intended for benchmarking the user experience while exploring a structured dataset, not the performance of the query engine. BSBM is just used to provide the data to be explored.
 
-This is a cheap User Interface benchmark as it does not involve users but experts, who measure how many interaction steps are required to complete each of the benchmark tasks, if possible. This also facilitates comparing different tools without the bias that different end-user profiles might introduce. The way to measure this interaction steps and convert them to an estimate of the required time to complete a task is based on the [Keystroke-Level Model (KLM)](https://en.wikipedia.org/wiki/Keystroke-level_model)
+BESDUI is a cheap User Interface benchmark as it does not involve users but experts who measure how many interaction steps are required to complete each benchmark task. It also facilitates comparing different tools without the bias that different end-user profiles might introduce. The way to measure these interaction steps and convert them to an estimate of the required time to complete a task is based on the [Keystroke-Level Model (KLM)](https://en.wikipedia.org/wiki/Keystroke-level_model)
 
 Reference
 
@@ -30,21 +30,21 @@ Reference
 
 **Task 10**. [Get information about a reviewer](Benchmark/10.md)
 
-**Task 11**. [Get offers for a given product which fulfill specific requirements](Benchmark/11.md)
+**Task 11**. [Get offers for a given product that fulfill specific requirements](Benchmark/11.md)
 
 **Task 12**. [Export the chosen offer into another information system which uses a different schema](Benchmark/12.md)
 
 ## Metrics
 
-Based on benchmark, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been proposed, one about effectiveness and two about efficiency:
+Based on the benchmark, three [Quality in Use metrics](http://www.jucs.org/jucs_19_8/using_SWET_QUM_to) have been proposed, one about effectiveness and two about efficiency:
 
 * **Capability (C)** (effectiveness): what proportion of one task is completed (0% if not possible to complete or 100% otherwise) or, for the whole benchmark, the percentage of all 12 tasks completed.
-* **Operator Count (OC)** (efficiency): how many KLM Operators, from Table 1, are required to complete a task or the average count just for completed tasks.
-* **Time (T)** (efficiency): each KLM Operator has a corresponding average time to complete it as detailed in Table 1. For a task, this metric is computed by multiplying, for each operator type, the time for each operator by the operator count. Then, summing them all together. For the whole benchmark, it is the average time considering just the completed tasks.
+* **Operator Count (OC)** (efficiency): the number of KLM Operators, from Table 1, required to complete a task or the average count just for completed tasks.
+* **Time (T)** (efficiency): each KLM Operator has a corresponding average completion time, as detailed in Table 1. For a task, this metric is computed by multiplying the time for each operator by the operator count for each type. Then, summing them all together. For the whole benchmark, it is the average time considering just the completed tasks.
 
 Additionally, there is a combined effectiveness/efficiency metric:
 
-* **Task Efficiency (TE)** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per minute". For the whole benchmark it is computed using the percentage of all 12 tasks completed divided by the average time for the completed tasks, then multiplied by 60 to compute the goals per minute.
+* **Task Efficiency (TE)** (effectiveness/efficiency): measured as the ratio of **Capability** to **Time**, "goals per minute". For the whole benchmark, it is computed using the percentage of all 12 tasks completed divided by the average time for the completed tasks, then multiplied by 60 to compute the goals per minute.
 
 | Keystroke-Level Model (KLM) Operator                                                                                                | Time (seconds) |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|
@@ -72,7 +72,7 @@ Currently, the BESDUI has been applied to the following tools:
 | SIEUFERD          | **96%**    | 48.7     | 19.8     | 2.9      | 71.3           | 32.63   | 1.8             |
 | PEPESEARCH        | 17%        | 7        | 2.5      | 1.5      | **11**         | **4.8** | 2.1             |
 
-Table 2. Benchmark results for different End-User Structured Data User Interfaces. Showing the average for all completed benchmark tasks. Best results are in bold
+Table 2. Benchmark results for different End-User Structured Data User Interfaces. Showing the average for all completed benchmark tasks. The best results are in bold
 
 ## Contributing
 
@@ -88,9 +88,9 @@ To apply the benchmark, **perform each one of the tasks** with the evaluated too
 
 When all tasks have been checked, you can **compute the BESDUI metrics** using the [BESDUI Spreadsheet](Results/BESDUI.xls).
 
-To **contribute results**, please, use the [Evaluation Template](Results/EvaluationTemplate.md). Create a folder in [Results](Results) named after the evaluated tool and copy there the [EvaluationTemplate.md](Results/EvaluationTemplate.md). Then, rename it to **README.md** and fill it to report the results. You can also place in the same folder all other relevant files (images, spreadsheets,...). 
+To **contribute results**, please, use the [Evaluation Template](Results/EvaluationTemplate.md). Create a folder in [Results](Results) named after the evaluated tool and copy the [EvaluationTemplate.md](Results/EvaluationTemplate.md) there. Then, rename it to **README.md** and fill it in to report the results. You can also place all other relevant files (images, spreadsheets, etc.) in the same folder. 
 
-Finally, commit all changes to your fork and perform a **PULL REQUEST** to get your results published. Alternatively, you can just send the file with your results to roberto.garcia@udl.cat 
+Finally, commit all changes to your fork and perform a **PULL REQUEST** to get your results published. Alternatively, you can send the file with your results to roberto.garcia@udl.cat 
 
 ## Acknowledgements
 
